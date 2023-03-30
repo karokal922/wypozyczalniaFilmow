@@ -15,10 +15,9 @@ namespace wypozyczalniaDAL.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Rent> Rentals { get; set; }
         public DbSet<Rate> Ratings { get; set; }
-        public void OnModelCreating(DbContextOptionsBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            modelBuilder.UseSqlServer();
+            optionsBuilder.UseSqlServer();
         }
-
     }
 }
