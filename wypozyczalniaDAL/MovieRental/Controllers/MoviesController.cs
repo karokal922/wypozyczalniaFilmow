@@ -17,14 +17,14 @@ namespace MovieRental.Controllers
         private UnitOfWork unitOfWork = new UnitOfWork();
 
         // GET: Movies
-        public ViewResult Index()
+        public ActionResult Index()
         {
             var movies = unitOfWork.MovieRepository.Get(includeProperties: "Categories");
             return View(movies.ToList());
         }
 
         // GET: Movies/Details/5
-        public ViewResult Details(int? id)
+        public ActionResult Details(int? id)
         {
             Movie movie = unitOfWork.MovieRepository.GetByID(id);
             return View(movie);

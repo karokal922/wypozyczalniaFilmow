@@ -11,42 +11,42 @@ using wypozyczalniaDAL.Repositories;
 
 namespace MovieRental.Controllers
 {
-    public class RentalsController : Controller
+    public class UsersController : Controller
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
 
-        // GET: Rentals
+        // GET: Users
         public ActionResult Index()
         {
-            var rentals = unitOfWork.RentRepository.Get(includeProperties: "Movies");
-            return View(rentals.ToList());
+            var users = unitOfWork.UserRepository.Get(includeProperties: "Rates");
+            return View(users.ToList());
         }
 
-        // GET: Rentals/Details/5
+        // GET: Users/Details/5
         public ActionResult Details(int? id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
-            return View(rent);
+            User user = unitOfWork.UserRepository.GetByID(id);
+            return View(user);
         }
 
-        // GET: Rentals/Create
+        // GET: Users/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Rentals/Create
+        // POST: Users/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Rent rent)
+        public ActionResult Create(User user)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RentRepository.Insert(rent);
+                    unitOfWork.UserRepository.Insert(user);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -55,28 +55,28 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(rent);
+            return View(user);
         }
 
-        // GET: Rentals/Edit/5
+        // GET: Users/Edit/5
         public ActionResult Edit(int? id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
-            return View(rent);
+            User user = unitOfWork.UserRepository.GetByID(id);
+            return View(user);
         }
 
-        // POST: Rentals/Edit/5
+        // POST: Users/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Rent rent)
+        public ActionResult Edit(int id, User user)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RentRepository.Update(rent);
+                    unitOfWork.UserRepository.Update(user);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -85,30 +85,30 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(rent);
+            return View(user);
         }
 
-        // GET: Rentals/Delete/5
+        // GET: Users/Delete/5
         public ActionResult Delete(int? id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
-            return View(rent);
+            User user = unitOfWork.UserRepository.GetByID(id);
+            return View(user);
         }
 
-        // POST: Rentals/Delete/5
+        // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
-            unitOfWork.RentRepository.Delete(id);
+            User user = unitOfWork.UserRepository.GetByID(id);
+            unitOfWork.UserRepository.Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }
 
-        //private bool RentExists(int id)
+        //private bool UserExists(int id)
         //{
-        //  return (_context.Rentals?.Any(e => e.Id_Rate == id)).GetValueOrDefault();
+        //  return (_context.Users?.Any(e => e.Id_User == id)).GetValueOrDefault();
         //}
     }
 }
