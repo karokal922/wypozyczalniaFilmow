@@ -14,14 +14,14 @@ namespace wypozyczalniaDAL.Models
         [Key]
         public int Id_Movie { get; set; }
         [Required]
-        public IEnumerable<int> Category_Ids { get; set; }
+        public IEnumerable<Category> Categories { get; set; }
         [Required]
         public string Title { get; set; }
         [Required]
         public string Director { get; set; }
         [Required]
         public DateTime Premiere { get; set; }
-        public IEnumerable<int>? Ratings {get;set;}
+        public IEnumerable<Rate>? Ratings {get;set;}
         [Required,StringLength(250)]
         public string? Description { get; set; }
     }

@@ -14,7 +14,7 @@ namespace wypozyczalniaDAL.Models
         [Key]
         public int Id_User { get; set; }
         [Required]
-        public IEnumerable<int> Rate_Ids { get; set; }
+        public IEnumerable<Rate> Rates { get; set; }
         [StringLength(30)]
         [Required]
         public string Name { get; set; }

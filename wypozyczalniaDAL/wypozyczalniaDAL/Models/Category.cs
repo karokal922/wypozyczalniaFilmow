@@ -14,7 +14,7 @@ namespace wypozyczalniaDAL.Models
         [Key]
         public int Id_Category { get; set; }
         [Required]
-        public IEnumerable<int> Movie_Ids { get; set; } 
+        public IEnumerable<Movie> Movies { get; set; } 
         [StringLength(50)]
         [Required]
         public string CategoryName { get; set; }

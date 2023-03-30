@@ -1,0 +1,14 @@
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\bin\Debug\net6.0\wypozyczalniaDAL.deps.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\bin\Debug\net6.0\wypozyczalniaDAL.runtimeconfig.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\bin\Debug\net6.0\wypozyczalniaDAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\bin\Debug\net6.0\wypozyczalniaDAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.csproj.AssemblyReference.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.AssemblyInfoInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.AssemblyInfo.cs
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.csproj.CoreCompileInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\refint\wypozyczalniaDAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\wypozyczalniaDAL.genruntimeconfig.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\wypozyczalniaDAL\obj\Debug\net6.0\ref\wypozyczalniaDAL.dll
