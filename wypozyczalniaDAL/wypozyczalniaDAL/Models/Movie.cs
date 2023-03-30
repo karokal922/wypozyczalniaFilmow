@@ -23,6 +23,6 @@ namespace wypozyczalniaDAL.Models
         public DateTime Premiere { get; set; }
         public IEnumerable<int>? Ratings {get;set;}
         [Required,StringLength(250)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
     }
 }

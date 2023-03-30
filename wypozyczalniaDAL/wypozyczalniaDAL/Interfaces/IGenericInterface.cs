@@ -7,13 +7,13 @@ using wypozyczalniaDAL.Models;
 
 namespace wypozyczalniaDAL.Interfaces
 {
-    public interface IRenRepository : IDisposable
+    public interface IGenericInterface<T> : IDisposable
     {
-        IEnumerable<Rent> GetRents();
-        Rent GetRent(int id);
-        void InsertRent(Rent rent);
-        void DeleteRent(int id);
-        void UpdateRent(Rent rent);
+        IEnumerable<T> Get();
+        T Get(int id);
+        void Insert(T value);
+        void Delete(int id);
+        void Update(T value);
         void Save();
     }
 }

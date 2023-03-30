@@ -13,5 +13,15 @@ namespace wypozyczalniaDAL.Models
     {
         [Key]
         public int Id_Rate { get; set; }
+        [Required]
+        public IEnumerable<int> Movie_IDs { get; set; }
+        [Required]
+        [ForeignKey(nameof(Payment))]
+        public int Payment_ID { get; set; }
+        [Required]
+        [ForeignKey(nameof(User))]
+        public int User_ID { get; set; }
+        [Required]
+        public DateTime RentingDate { get; set; }
     }
 }
