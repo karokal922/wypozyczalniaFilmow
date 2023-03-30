@@ -11,43 +11,43 @@ using wypozyczalniaDAL.Repositories;
 
 namespace MovieRental.Controllers
 {
-    public class MoviesController : Controller
+    public class CategoriesController : Controller
     {
-
         private UnitOfWork unitOfWork = new UnitOfWork();
 
-        // GET: Movies
-        public ViewResult Index()
+
+        // GET: Categories
+        public ActionResult Index()
         {
-            var movies = unitOfWork.MovieRepository.Get(includeProperties: "Categories");
-            return View(movies.ToList());
+            var categories = unitOfWork.CategoryRepository.Get(includeProperties: "");
+            return View(categories.ToList());
         }
 
-        // GET: Movies/Details/5
-        public ViewResult Details(int? id)
+        // GET: Categories/Details/5
+        public ActionResult Details(int? id)
         {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
-            return View(movie);
+            Category category = unitOfWork.CategoryRepository.GetByID(id);
+            return View(category);
         }
 
-        // GET: Movies/Create
+        // GET: Categories/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Movies/Create
+        // POST: Categories/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Movie movie)
+        public ActionResult Create(Category category)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.MovieRepository.Insert(movie);
+                    unitOfWork.CategoryRepository.Insert(category);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -56,30 +56,28 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
-            return View(movie);
+            return View(category);
         }
 
-        // GET: Movies/Edit/5
+        // GET: Categories/Edit/5
         public ActionResult Edit(int? id)
         {
             Movie movie = unitOfWork.MovieRepository.GetByID(id);
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
             return View(movie);
         }
 
-        // POST: Movies/Edit/5
+        // POST: Categories/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Movie movie)
+        public ActionResult Edit(int id,Category category)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.MovieRepository.Update(movie);
+                    unitOfWork.CategoryRepository.Update(category);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -88,33 +86,24 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
-            return View(movie);
+            return View(category);
+        }
+
+        // GET: Categories/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            Category category = unitOfWork.CategoryRepository.GetByID(id);
+            return View(category);
         }
 
         
-        private void PopulateDepartmentsDropDownList(object selectedCategory = null)
-        {
-            var categoriesQuary = unitOfWork.CategoryRepository.Get(
-                orderBy: q => q.OrderBy(d => d.Id_Category));
-            ViewBag.Id_Category = new SelectList(categoriesQuary, "Id_Category", "Id_Category", selectedCategory);
-        }
 
-        //
-        // GET: /Course/Delete/5
-
-        public ActionResult Delete(int id)
-        {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
-            return View(movie);
-        }
-
-        // POST: Movies/Delete/5
+        // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
+            Category category = unitOfWork.CategoryRepository.GetByID(id);
             unitOfWork.MovieRepository.Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
@@ -125,6 +114,5 @@ namespace MovieRental.Controllers
             unitOfWork.Dispose();
             base.Dispose(disposing);
         }
-
     }
 }
