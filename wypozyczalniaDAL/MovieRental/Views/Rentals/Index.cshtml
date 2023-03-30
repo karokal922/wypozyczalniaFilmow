@@ -1,0 +1,47 @@
+﻿@model IEnumerable<wypozyczalniaDAL.Models.Rent>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RentingDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Payment_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentingDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Rate">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Rate">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Rate">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

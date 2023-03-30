@@ -11,43 +11,42 @@ using wypozyczalniaDAL.Repositories;
 
 namespace MovieRental.Controllers
 {
-    public class CategoriesController : Controller
+    public class RentalsController : Controller
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
 
-
-        // GET: Categories
+        // GET: Rentals
         public ActionResult Index()
         {
-            var categories = unitOfWork.CategoryRepository.Get(includeProperties: "");
-            return View(categories.ToList());
+            var rentals = unitOfWork.RentRepository.Get(includeProperties: "Movies");
+            return View(rentals.ToList());
         }
 
-        // GET: Categories/Details/5
+        // GET: Rentals/Details/5
         public ActionResult Details(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            return View(rent);
         }
 
-        // GET: Categories/Create
+        // GET: Rentals/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Categories/Create
+        // POST: Rentals/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Category category)
+        public ActionResult Create([Bind("Id_Rate,Payment_ID,User_ID,RentingDate")] Rent rent)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Insert(category);
+                    unitOfWork.RentRepository.Insert(rent);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -56,28 +55,28 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(category);
+            return View(rent);
         }
 
-        // GET: Categories/Edit/5
+        // GET: Rentals/Edit/5
         public ActionResult Edit(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            return View(rent);
         }
 
-        // POST: Categories/Edit/5
+        // POST: Rentals/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id,Category category)
+        public ActionResult Edit(int id, Rent rent)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Update(category);
+                    unitOfWork.RentRepository.Update(rent);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -86,33 +85,30 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(category);
+            return View(rent);
         }
 
-        // GET: Categories/Delete/5
+        // GET: Rentals/Delete/5
         public ActionResult Delete(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            return View(rent);
         }
 
-        
-
-        // POST: Categories/Delete/5
+        // POST: Rentals/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            unitOfWork.MovieRepository.Delete(id);
+            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            unitOfWork.RentRepository.Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            unitOfWork.Dispose();
-            base.Dispose(disposing);
-        }
+        //private bool RentExists(int id)
+        //{
+        //  return (_context.Rentals?.Any(e => e.Id_Rate == id)).GetValueOrDefault();
+        //}
     }
 }

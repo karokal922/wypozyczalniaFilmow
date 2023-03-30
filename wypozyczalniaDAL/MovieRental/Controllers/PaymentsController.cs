@@ -11,43 +11,42 @@ using wypozyczalniaDAL.Repositories;
 
 namespace MovieRental.Controllers
 {
-    public class CategoriesController : Controller
+    public class PaymentsController : Controller
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
 
-
-        // GET: Categories
+        // GET: Payments
         public ActionResult Index()
         {
-            var categories = unitOfWork.CategoryRepository.Get(includeProperties: "");
-            return View(categories.ToList());
+            var payments = unitOfWork.PaymentRepository.Get(includeProperties: "");
+            return View(payments.ToList());
         }
 
-        // GET: Categories/Details/5
+        // GET: Payments/Details/5
         public ActionResult Details(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            return View(payment);
         }
 
-        // GET: Categories/Create
-        public IActionResult Create()
+        // GET: Payments/Create
+        public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Categories/Create
+        // POST: Payments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Category category)
+        public ActionResult Create(Payment payment)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Insert(category);
+                    unitOfWork.PaymentRepository.Insert(payment);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -56,28 +55,28 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(category);
+            return View(payment);
         }
 
-        // GET: Categories/Edit/5
+        // GET: Payments/Edit/5
         public ActionResult Edit(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            return View(payment);
         }
 
-        // POST: Categories/Edit/5
+        // POST: Payments/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id,Category category)
+        public IActionResult Edit(int id, Payment payment)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Update(category);
+                    unitOfWork.PaymentRepository.Update(payment);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -86,33 +85,30 @@ namespace MovieRental.Controllers
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
             }
-            return View(category);
+            return View(payment);
         }
 
-        // GET: Categories/Delete/5
+        // GET: Payments/Delete/5
         public ActionResult Delete(int? id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            return View(category);
+            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            return View(payment);
         }
 
-        
-
-        // POST: Categories/Delete/5
+        // POST: Payments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            unitOfWork.MovieRepository.Delete(id);
+            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            unitOfWork.PaymentRepository.Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            unitOfWork.Dispose();
-            base.Dispose(disposing);
-        }
+        //private bool PaymentExists(int id)
+        //{
+        //  return (unitOfWork.PaymentRepository.Get.Any(e => e.Id_Payment == id)).GetValueOrDefault();
+        //}
     }
 }
