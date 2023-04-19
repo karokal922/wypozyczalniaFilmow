@@ -1,0 +1,5 @@
+C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.csproj.AssemblyReference.cache
+C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.AssemblyInfoInputs.cache
+C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.AssemblyInfo.cs
+C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.csproj.CoreCompileInputs.cache
