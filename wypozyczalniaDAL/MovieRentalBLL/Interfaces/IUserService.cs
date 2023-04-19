@@ -9,7 +9,7 @@ namespace MovieRentalBLL.Interfaces
 {
     public interface IUserService
     {
-        public IEnumerable<User> GetUsersWithRateCountSorted();
+        public IEnumerable<object> GetUsersWithRateCountSorted();
         public IEnumerable<User> GetUsersByNameSorted(string name);
     }
 }
