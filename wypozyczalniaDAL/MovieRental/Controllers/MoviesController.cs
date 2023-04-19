@@ -109,7 +109,7 @@ namespace MovieRental.Controllers
         // POST: Movies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
             Movie movie = unitOfWork.MovieRepository.GetMovie(id); //GetByID(id);
             unitOfWork.MovieRepository.DeleteMovie(id);//Delete(id);
