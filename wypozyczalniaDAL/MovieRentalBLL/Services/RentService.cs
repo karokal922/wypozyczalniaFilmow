@@ -26,7 +26,7 @@ namespace MovieRentalBLL.Services
                     from Movie movie in rent.Movies
                     where rent.User_ID==userId
                     select rent).ToList();
-        }
+        } 
 
         public List<Rent> GetRentalsByMovie(int movieId)
         {
@@ -42,7 +42,7 @@ namespace MovieRentalBLL.Services
             }
 
             return rentalsByMovie;
-        }
+        } 
 
 
     }
