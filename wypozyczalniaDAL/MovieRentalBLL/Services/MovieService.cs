@@ -8,7 +8,7 @@ using MovieRentalBLL.Interfaces;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
-namespace MovieRentalBLL
+namespace MovieRentalBLL.Services
 {
     public class MovieService : IMovieService
     {
@@ -42,7 +42,7 @@ namespace MovieRentalBLL
                     where movie_category == category
                     select movie).ToList();
 
-            
+
 
         }
         public IEnumerable<Movie> SortMoviesByRatingsInGivenYear(int year)
