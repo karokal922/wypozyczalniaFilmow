@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using wypozyczalniaDAL.Interfaces;
+using wypozyczalniaDAL.Models;
+using wypozyczalniaDAL.Repositories;
 
 namespace MovieRentalBLL.Services
 {
@@ -27,6 +29,14 @@ namespace MovieRentalBLL.Services
                 .Where(p => paymentIds.Contains(p.Id_Payment))
                 .ToList();
             return payments.Average(p => p.Price);
+        }
+
+        public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice)
+        {
+            var payments = unitOfWork.PaymentRepository.GetPayments()
+                .Where(p => p.Price >= minPrice && p.Price <= maxPrice)
+                .ToList();
+            return payments;
         }
 
 
