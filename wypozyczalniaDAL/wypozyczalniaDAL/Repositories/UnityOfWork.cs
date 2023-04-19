@@ -18,6 +18,16 @@ namespace wypozyczalniaDAL.Repositories
         private GenericRepository<Rent> rentRepository;
         private GenericRepository<User> userRepository;
 
+        public UnitOfWork(MovieRentalContext context) 
+        {
+            this.context = context;
+            this.movieRepository = new GenericRepository<Movie>(context);
+            this.categoryRepository = new GenericRepository<Category>(context);
+            this.paymentRepository = new GenericRepository<Payment>(context);
+            this.rateRepository = new GenericRepository<Rate>(context);
+            this.rentRepository = new GenericRepository<Rent>(context);
+            this.userRepository = new GenericRepository<User>(context);
+        }
         public GenericRepository<Category> CategoryRepository
         {
             get

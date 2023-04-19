@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 using wypozyczalniaDAL.Repositories;
 
@@ -14,8 +15,13 @@ namespace MovieRental.Controllers
     public class MoviesController : Controller
     {
 
-        private UnitOfWork unitOfWork = new UnitOfWork();
+        //private UnitOfWork unitOfWork = new UnitOfWork();
+        private IUnitOfWork unitOfWork;// = new UnitOfWork();
 
+        public MoviesController(MovieRentalContext context)
+        {
+            this.unitOfWork = new UnitOfWork(context);
+        }
         // GET: Movies
         public ActionResult Index()
         {
