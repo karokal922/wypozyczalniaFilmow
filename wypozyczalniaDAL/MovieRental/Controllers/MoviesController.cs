@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -14,25 +13,43 @@ namespace MovieRental.Controllers
 {
     public class MoviesController : Controller
     {
-
-        //private UnitOfWork unitOfWork = new UnitOfWork();
-        private IUnitOfWork unitOfWork;// = new UnitOfWork();
+        private readonly MovieRentalContext _context;
 
         public MoviesController(MovieRentalContext context)
         {
-            this.unitOfWork = new UnitOfWork(context);
+            _context = context;
         }
+        //private IUnitOfWork unitOfWork;// = new UnitOfWork();
+
+        //public MoviesController(MovieRentalContext context)
+        //{
+        //    this.unitOfWork = new UnitOfWork(context);
+        //}
+
+
         // GET: Movies
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var movies = unitOfWork.MovieRepository.Get(includeProperties: "Categories");
-            return View(movies.ToList());
+              return _context.Movies != null ? 
+                          View(await _context.Movies.ToListAsync()) :
+                          Problem("Entity set 'MovieRentalContext.Movies'  is null.");
         }
 
         // GET: Movies/Details/5
-        public ActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
+            if (id == null || _context.Movies == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movies
+                .FirstOrDefaultAsync(m => m.Id_Movie == id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
             return View(movie);
         }
 
@@ -47,30 +64,30 @@ namespace MovieRental.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Movie movie)
+        public async Task<IActionResult> Create([Bind("Id_Movie,Title,Director,Premiere,Description")] Movie movie)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    unitOfWork.MovieRepository.Insert(movie);
-                    unitOfWork.Save();
-                    return RedirectToAction("Index");
-                }
+                _context.Add(movie);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-            catch (DataException /* dex */)
-            {
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-            }
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
             return View(movie);
         }
 
         // GET: Movies/Edit/5
-        public ActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
+            if (id == null || _context.Movies == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movies.FindAsync(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
             return View(movie);
         }
 
@@ -79,58 +96,76 @@ namespace MovieRental.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_Movie,Title,Director,Premiere,Description")] Movie movie)
         {
-            try
+            if (id != movie.Id_Movie)
             {
-                if (ModelState.IsValid)
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
                 {
-                    unitOfWork.MovieRepository.Update(movie);
-                    unitOfWork.Save();
-                    return RedirectToAction("Index");
+                    _context.Update(movie);
+                    await _context.SaveChangesAsync();
                 }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!MovieExists(movie.Id_Movie))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
             }
-            catch (DataException /* dex */)
-            {
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-            }
-            PopulateDepartmentsDropDownList(movie.Id_Movie);
             return View(movie);
         }
 
-        
-        private void PopulateDepartmentsDropDownList(object selectedCategory = null)
+        // GET: Movies/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            var categoriesQuary = unitOfWork.CategoryRepository.Get(
-                orderBy: q => q.OrderBy(d => d.Id_Category));
-            ViewBag.Id_Category = new SelectList(categoriesQuary, "Id_Category", "Id_Category", selectedCategory);
-        }
+            if (id == null || _context.Movies == null)
+            {
+                return NotFound();
+            }
 
-        //
-        // GET: /Course/Delete/5
+            var movie = await _context.Movies
+                .FirstOrDefaultAsync(m => m.Id_Movie == id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
 
-        public ActionResult Delete(int id)
-        {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
             return View(movie);
         }
 
         // POST: Movies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            Movie movie = unitOfWork.MovieRepository.GetByID(id);
-            unitOfWork.MovieRepository.Delete(id);
-            unitOfWork.Save();
-            return RedirectToAction("Index");
+            if (_context.Movies == null)
+            {
+                return Problem("Entity set 'MovieRentalContext.Movies'  is null.");
+            }
+            var movie = await _context.Movies.FindAsync(id);
+            if (movie != null)
+            {
+                _context.Movies.Remove(movie);
+            }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        protected override void Dispose(bool disposing)
+        private bool MovieExists(int id)
         {
-            unitOfWork.Dispose();
-            base.Dispose(disposing);
+          return (_context.Movies?.Any(e => e.Id_Movie == id)).GetValueOrDefault();
         }
-
     }
 }

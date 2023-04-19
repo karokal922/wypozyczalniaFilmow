@@ -25,14 +25,14 @@ namespace MovieRental.Controllers
         // GET: Ratings
         public ActionResult Index()
         {
-            var ratings = unitOfWork.RateRepository.Get(includeProperties: "");
+            var ratings = unitOfWork.RateRepository.GetRates();//Get(includeProperties: "");
             return View(ratings.ToList());
         }
 
         // GET: Ratings/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            Rate rate = unitOfWork.RateRepository.GetByID(id);
+            Rate rate = unitOfWork.RateRepository.GetRate(id);//GetByID(id);
             return View(rate);
         }
 
@@ -53,7 +53,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RateRepository.Insert(rate);
+                    unitOfWork.RateRepository.InsertRate(rate);//Insert(rate);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -66,9 +66,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Ratings/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            Rate rate = unitOfWork.RateRepository.GetByID(id);
+            Rate rate = unitOfWork.RateRepository.GetRate(id);//GetByID(id);
             return View(rate);
         }
 
@@ -83,7 +83,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RateRepository.Update(rate);
+                    unitOfWork.RateRepository.UpdateRate(rate);//Update(rate);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -96,9 +96,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Ratings/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            Rate rate = unitOfWork.RateRepository.GetByID(id);
+            Rate rate = unitOfWork.RateRepository.GetRate(id); //GetByID(id);
             return View(rate);
         }
 
@@ -107,8 +107,8 @@ namespace MovieRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Rate rate = unitOfWork.RateRepository.GetByID(id);
-            unitOfWork.RateRepository.Delete(id);
+            Rate rate = unitOfWork.RateRepository.GetRate(id); //GetByID(id);
+            unitOfWork.RateRepository.DeleteRate(id);//Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }

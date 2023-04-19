@@ -25,14 +25,14 @@ namespace MovieRental.Controllers
         // GET: Rentals
         public ActionResult Index()
         {
-            var rentals = unitOfWork.RentRepository.Get(includeProperties: "Movies");
+            var rentals = unitOfWork.RentRepository.GetRents();//Get(includeProperties: "Movies");
             return View(rentals.ToList());
         }
 
         // GET: Rentals/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            Rent rent = unitOfWork.RentRepository.GetRent(id);//GetByID(id);
             return View(rent);
         }
 
@@ -53,7 +53,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RentRepository.Insert(rent);
+                    unitOfWork.RentRepository.InsertRent(rent);//Insert(rent);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -66,9 +66,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Rentals/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            Rent rent = unitOfWork.RentRepository.GetRent(id); //GetByID(id);
             return View(rent);
         }
 
@@ -83,7 +83,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.RentRepository.Update(rent);
+                    unitOfWork.RentRepository.UpdateRent(rent);//Update(rent);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -96,9 +96,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Rentals/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
+            Rent rent = unitOfWork.RentRepository.GetRent(id); //GetByID(id);
             return View(rent);
         }
 
@@ -107,8 +107,8 @@ namespace MovieRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Rent rent = unitOfWork.RentRepository.GetByID(id);
-            unitOfWork.RentRepository.Delete(id);
+            Rent rent = unitOfWork.RentRepository.GetRent(id); //GetByID(id);
+            unitOfWork.RentRepository.DeleteRent(id);//Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }

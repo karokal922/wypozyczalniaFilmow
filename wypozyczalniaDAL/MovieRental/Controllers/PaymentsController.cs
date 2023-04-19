@@ -26,14 +26,14 @@ namespace MovieRental.Controllers
         // GET: Payments
         public ActionResult Index()
         {
-            var payments = unitOfWork.PaymentRepository.Get(includeProperties: "");
+            var payments = unitOfWork.PaymentRepository.GetPayments();//Get(includeProperties: "");
             return View(payments.ToList());
         }
 
         // GET: Payments/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            Payment payment = unitOfWork.PaymentRepository.GetPayment(id);//GetByID(id);
             return View(payment);
         }
 
@@ -54,7 +54,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.PaymentRepository.Insert(payment);
+                    unitOfWork.PaymentRepository.InsertPayment(payment);//Insert(payment);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -67,9 +67,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Payments/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            Payment payment = unitOfWork.PaymentRepository.GetPayment(id); //GetByID(id);
             return View(payment);
         }
 
@@ -84,7 +84,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.PaymentRepository.Update(payment);
+                    unitOfWork.PaymentRepository.UpdatePayment(payment);//Update(payment);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -97,9 +97,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Payments/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
+            Payment payment = unitOfWork.PaymentRepository.GetPayment(id); //GetByID(id);
             return View(payment);
         }
 
@@ -108,8 +108,8 @@ namespace MovieRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Payment payment = unitOfWork.PaymentRepository.GetByID(id);
-            unitOfWork.PaymentRepository.Delete(id);
+            Payment payment = unitOfWork.PaymentRepository.GetPayment(id); //GetByID(id);
+            unitOfWork.PaymentRepository.DeletePayment(id);//Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }

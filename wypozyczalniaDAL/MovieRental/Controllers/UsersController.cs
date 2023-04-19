@@ -25,14 +25,14 @@ namespace MovieRental.Controllers
         // GET: Users
         public ActionResult Index()
         {
-            var users = unitOfWork.UserRepository.Get(includeProperties: "Rates");
+            var users = unitOfWork.UserRepository.GetUsers();//Get(includeProperties: "Rates");
             return View(users.ToList());
         }
 
         // GET: Users/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)//int?
         {
-            User user = unitOfWork.UserRepository.GetByID(id);
+            User user = unitOfWork.UserRepository.GetUser(id);//GetByID(id);
             return View(user);
         }
 
@@ -53,7 +53,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.UserRepository.Insert(user);
+                    unitOfWork.UserRepository.InsertUser(user);//Insert(user);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -66,9 +66,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Users/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            User user = unitOfWork.UserRepository.GetByID(id);
+            User user = unitOfWork.UserRepository.GetUser(id);//GetByID(id);
             return View(user);
         }
 
@@ -83,7 +83,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.UserRepository.Update(user);
+                    unitOfWork.UserRepository.UpdateUser(user);//Update(user);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -96,9 +96,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Users/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            User user = unitOfWork.UserRepository.GetByID(id);
+            User user = unitOfWork.UserRepository.GetUser(id);//GetByID(id);
             return View(user);
         }
 
@@ -107,8 +107,8 @@ namespace MovieRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            User user = unitOfWork.UserRepository.GetByID(id);
-            unitOfWork.UserRepository.Delete(id);
+            User user = unitOfWork.UserRepository.GetUser(id); //GetByID(id);
+            unitOfWork.UserRepository.DeleteUser(id);//Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }

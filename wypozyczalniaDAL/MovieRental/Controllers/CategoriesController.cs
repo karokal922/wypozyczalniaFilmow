@@ -23,14 +23,14 @@ namespace MovieRental.Controllers
         // GET: Categories
         public ActionResult Index()
         {
-            var categories = unitOfWork.CategoryRepository.Get(includeProperties: "");
+            var categories = unitOfWork.CategoryRepository.GetCategories();//Get(includeProperties: "");
             return View(categories.ToList());
         }
 
         // GET: Categories/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
+            Category category = unitOfWork.CategoryRepository.GetCategory(id);//GetByID(id);
             return View(category);
         }
 
@@ -51,7 +51,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Insert(category);
+                    unitOfWork.CategoryRepository.InsertCategory(category);//Insert(category);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -64,9 +64,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Categories/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
+            Category category = unitOfWork.CategoryRepository.GetCategory(id);//GetByID(id);
             return View(category);
         }
 
@@ -81,7 +81,7 @@ namespace MovieRental.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    unitOfWork.CategoryRepository.Update(category);
+                    unitOfWork.CategoryRepository.UpdateCategory(category);//Update(category);
                     unitOfWork.Save();
                     return RedirectToAction("Index");
                 }
@@ -94,9 +94,9 @@ namespace MovieRental.Controllers
         }
 
         // GET: Categories/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
+            Category category = unitOfWork.CategoryRepository.GetCategory(id); //GetByID(id);
             return View(category);
         }
 
@@ -107,8 +107,8 @@ namespace MovieRental.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Category category = unitOfWork.CategoryRepository.GetByID(id);
-            unitOfWork.MovieRepository.Delete(id);
+            Category category = unitOfWork.CategoryRepository.GetCategory(id); //GetByID(id);
+            unitOfWork.MovieRepository.DeleteMovie(id);//Delete(id);
             unitOfWork.Save();
             return RedirectToAction("Index");
         }
