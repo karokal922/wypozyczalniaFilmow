@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
 namespace wypozyczalniaDAL.Repositories
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         private MovieRentalContext context = new MovieRentalContext();
         private GenericRepository<Category> categoryRepository;
@@ -21,7 +22,6 @@ namespace wypozyczalniaDAL.Repositories
         {
             get
             {
-
                 if (this.categoryRepository == null)
                 {
                     this.categoryRepository = new GenericRepository<Category>(context);
@@ -34,7 +34,6 @@ namespace wypozyczalniaDAL.Repositories
         {
             get
             {
-
                 if (this.movieRepository == null)
                 {
                     this.movieRepository = new GenericRepository<Movie>(context);
@@ -47,7 +46,6 @@ namespace wypozyczalniaDAL.Repositories
         {
             get
             {
-
                 if (this.paymentRepository == null)
                 {
                     this.paymentRepository = new GenericRepository<Payment>(context);
