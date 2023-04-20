@@ -1,0 +1,85 @@
+﻿@using wypozyczalniaDAL.Models;
+<h1>RATECONTROLLER</h1>
+@model IEnumerable<wypozyczalniaDAL.Models.Rate>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowAverageRatePerMovie" asp-controller="Rate">
+    <input type="submit" value="Show Average Rate Per Movie" />
+</form>
+@if (ViewBag.AverageRatePerMovie!=null)
+{
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Movie_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>*@
+            <th>
+                {MovieID, Average Rate}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.AverageRatePerMovie)
+        {
+            <tr>
+                <td>
+                    @item
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+}
+<hr />
+<form asp-action="ShowAverageRatePerUser" asp-controller="Rate">
+    <input type="submit" value="Show Average Rate Per User" />
+</form>
+@if (ViewBag.AverageRatePerUser != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th>
+            @Html.DisplayNameFor(model => model.Movie_ID)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.User_ID)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model._Rate)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Comment)
+            </th>*@
+                <th>
+                    {UserID, Average Rate}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.AverageRatePerUser)
+            {
+                <tr>
+                    <td>
+                        @item
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

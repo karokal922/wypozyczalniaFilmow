@@ -1,0 +1,77 @@
+﻿@using wypozyczalniaDAL.Models;
+<h1>USERCONTROLLER</h1>
+@model IEnumerable<wypozyczalniaDAL.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowUsers" asp-controller="User" method="get">
+    Name of user:<input type="text" name="username" /><br />
+    <input type="submit" value="Send" />
+</form>
+@if (ViewBag.Users != null)
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in ViewBag.Users)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Surname
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+<hr></hr>
+<form asp-action="ShowUsersWithRateCount" asp-controller="User">
+    <input type="submit" value="Get Users with Rate Count" />
+</form>
+@if (ViewBag.UsersWithRateCount != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Rate Count
+                </th>*@
+                <th>
+                    {Name, Surname, Rate Count}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.UsersWithRateCount)
+            {
+                <tr>
+                    <td>
+                        @item
+                    </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}

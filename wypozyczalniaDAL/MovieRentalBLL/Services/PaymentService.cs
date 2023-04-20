@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MovieRentalBLL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using wypozyczalniaDAL.Repositories;
 
 namespace MovieRentalBLL.Services
 {
-    internal class PaymentService
+    public class PaymentService : IPaymentService
     {
         private readonly IUnitOfWork unitOfWork;
 
