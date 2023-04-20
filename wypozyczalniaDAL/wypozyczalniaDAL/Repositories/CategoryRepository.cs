@@ -20,7 +20,9 @@ namespace wypozyczalniaDAL.Repositories
 
         public IEnumerable<Category> GetCategories()
         {
-            return context.Categories.ToList();
+            return context.Categories
+                .Include(movies=>movies.Movies)
+                .ToList();
         }
 
         public Category GetCategory(int id)

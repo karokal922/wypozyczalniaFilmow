@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRentalBLL", "MovieRent
 		{9DCC8C8C-A2FB-43DB-AE6B-B294C471C806} = {9DCC8C8C-A2FB-43DB-AE6B-B294C471C806}
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBLL", "TestBLL\TestBLL.csproj", "{9E098A49-6847-4BC1-9340-EF8586A58993}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DCC8C8C-A2FB-43DB-AE6B-B294C471C806} = {9DCC8C8C-A2FB-43DB-AE6B-B294C471C806}
+		{D7A4EAC9-3C70-4064-BEBD-137EEEE96D21} = {D7A4EAC9-3C70-4064-BEBD-137EEEE96D21}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +37,10 @@ Global
 		{D7A4EAC9-3C70-4064-BEBD-137EEEE96D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7A4EAC9-3C70-4064-BEBD-137EEEE96D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7A4EAC9-3C70-4064-BEBD-137EEEE96D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E098A49-6847-4BC1-9340-EF8586A58993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E098A49-6847-4BC1-9340-EF8586A58993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E098A49-6847-4BC1-9340-EF8586A58993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E098A49-6847-4BC1-9340-EF8586A58993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

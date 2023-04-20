@@ -19,30 +19,37 @@ namespace MovieRentalBLL.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<Movie> GetMoviesByCategory(Category category)
+        public IEnumerable<Category> GetAllCategories()
+        {
+
+            return unitOfWork.CategoryRepository.GetCategories();
+        }
+
+        public IEnumerable<Movie> GetMoviesByCategory(int category_id)
         {
             var movies = unitOfWork.MovieRepository.GetMovies();
+            
+            
+            
+            List<Movie> result = new List<Movie>();
+            Category category = unitOfWork.CategoryRepository.GetCategory(category_id);
 
-            //List<Movie> result = new List<Movie>();
+            foreach (Movie movie in movies)
+            {
+                if (movie.Categories != null)
+                {
+                    foreach (Category movie_category in movie.Categories)
+                    {
+                        if (movie_category == category)
+                        {
+                            result.Add(movie);
+                        }
+                    }
+                }
+            }
 
-            //foreach (Movie movie in movies)
-            //{
-            //    foreach (Category movie_category in movie.Categories)
-            //    {
-            //        if (movie_category == category)
-            //        {
-            //            result.Add(movie);
-            //        }
-            //    }
-            //}
-            //return result;
-
-            return (from Movie movie in movies
-                    from Category movie_category in movie.Categories
-                    where movie_category == category
-                    select movie).ToList();
-
-
+            return result;
+ 
 
         }
         public IEnumerable<Movie> SortMoviesByRatingsInGivenYear(int year)
@@ -51,7 +58,7 @@ namespace MovieRentalBLL.Services
 
             return (from movie in movies
                     where movie.Premiere.Year == year
-                    orderby movie.Ratings.DefaultIfEmpty().Average(rate => rate?._Rate ?? 0.0) descending
+                    //orderby movie.Ratings.Average(rate => rate._Rate) descending
                     select movie).ToList();
         }
 

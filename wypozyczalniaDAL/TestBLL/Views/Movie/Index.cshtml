@@ -1,6 +1,82 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using wypozyczalniaDAL.Models;
+<h1>MOVIECONTROLLER</h1>
+@model IEnumerable<wypozyczalniaDAL.Models.Category>
+
 @{
-    <h1>MOVIECONTROLLER</h1>
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowMovies" asp-controller="Movie" method="get">
+    Year of Production:<input type="text" name="year" /><br />
+    <input type="submit" value="Send" />
+</form>
+<br />
+
+@if (ViewBag.Movies != null){
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Director
+            </th>
+            <th>
+                Premiere
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+            @foreach (var item in ViewBag.Movies)
+        {
+            <tr>
+                <td>
+                    @item.Title
+                </td>
+                <td>
+                    @item.Director
+                </td>
+                <td>
+                    @item.Premiere
+                </td>
+                <td>
+                    @item.Description
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+}
+@if(ViewBag.AllCategories != null)
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                CategoryName
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.AllCategories)
+        {
+            <tr>
+                <td>
+                    @item.CategoryName
+                </td>
+                <td>
+                    <a asp-action="GetAllFilsWithGivenCategory" asp-route-id="@item.Id_Category">Show all movies from this category</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 }

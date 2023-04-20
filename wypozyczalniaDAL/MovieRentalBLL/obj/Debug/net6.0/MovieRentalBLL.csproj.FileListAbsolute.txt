@@ -18,3 +18,18 @@ C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektP
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\refint\MovieRentalBLL.dll
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.pdb
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\ref\MovieRentalBLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\bin\Debug\net6.0\MovieRentalBLL.deps.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\bin\Debug\net6.0\MovieRentalBLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\bin\Debug\net6.0\MovieRentalBLL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\bin\Debug\net6.0\wypozyczalniaDAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\bin\Debug\net6.0\wypozyczalniaDAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.csproj.AssemblyReference.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.AssemblyInfoInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.AssemblyInfo.cs
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.csproj.CoreCompileInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.csproj.CopyComplete
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\refint\MovieRentalBLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\MovieRentalBLL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRentalBLL\obj\Debug\net6.0\ref\MovieRentalBLL.dll

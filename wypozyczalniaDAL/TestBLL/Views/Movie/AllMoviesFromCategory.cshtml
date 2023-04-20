@@ -1,0 +1,60 @@
+﻿@model wypozyczalniaDAL.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>All movies from selected categorie</h1>
+
+<div>
+    @if (ViewBag.MoviesFromCategory != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Director
+                    </th>
+                    <th>
+                        Premiere
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in ViewBag.MoviesFromCategory)
+                {
+                    <tr>
+                        <td>
+                            @item.Title
+                        </td>
+                        <td>
+                            @item.Director
+                        </td>
+                        <td>
+                            @item.Premiere
+                        </td>
+                        <td>
+                            @item.Description
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Empty</p>
+    }
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

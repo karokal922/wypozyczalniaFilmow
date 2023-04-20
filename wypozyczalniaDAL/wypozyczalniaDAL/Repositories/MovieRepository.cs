@@ -20,12 +20,17 @@ namespace wypozyczalniaDAL.Repositories
 
         public IEnumerable<Movie> GetMovies()
         {
-            return context.Movies.ToList();
+            return context.Movies
+                .Include(categories => categories.Categories)
+                .ToList();
         }
 
         public Movie GetMovie(int id)
         {
-            return context.Movies.Find(id);
+            return context.Movies
+                .Where(m=>m.Id_Movie==id)
+                .Include(categories => categories.Categories)
+                .FirstOrDefault();
         }
 
         public void InsertMovie(Movie movie)
