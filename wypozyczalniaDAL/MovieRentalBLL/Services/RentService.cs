@@ -42,8 +42,16 @@ namespace MovieRentalBLL.Services
             }
 
             return rentalsByMovie;
-        } 
+        }
 
+        public List<User> GetAllUsers()
+        {
+            return unitOfWork.UserRepository.GetUsers().ToList();
+        }
 
+        public List<Movie> GetAllMovies()
+        {
+            return unitOfWork.MovieRepository.GetMovies().ToList();
+        }
     }
 }

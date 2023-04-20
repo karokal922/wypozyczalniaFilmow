@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,8 +36,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Payment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Rate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Rent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Rent/RentalsByMovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxSZW50YWxzQnlNb3ZpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Rent/RentalsByUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxSZW50YWxzQnlVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Studia/3 rok/sem 6/TAIiP/Projekt/wypozyczalniaFilmow/wypozyczalniaDAL/TestBLL/Views/Shared/Error.cshtml]

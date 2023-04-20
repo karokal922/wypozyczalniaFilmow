@@ -1,0 +1,37 @@
+﻿@using wypozyczalniaDAL.Models;
+<h1>MOVIECONTROLLER</h1>
+@model IEnumerable<wypozyczalniaDAL.Models.Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowPaymentsInRange" asp-controller="Payment" method="get">
+    Minimal price:<input type="text" name="min_price" /><br />
+    Maximal price:<input type="text" name="max_price" /><br />
+    <input type="submit" value="Send" />
+</form>
+
+@if(ViewBag.PaymentsInRange != null){
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.PaymentsInRange)
+        {
+            <tr>
+                <td>
+                    @item.Price
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+}

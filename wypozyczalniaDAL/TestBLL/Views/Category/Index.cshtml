@@ -1,0 +1,46 @@
+﻿@using wypozyczalniaDAL.Models;
+<h1>CATEGORYCONTROLLER</h1>
+@model IEnumerable<wypozyczalniaDAL.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowCategoriesWithMovieCount" asp-controller="Category">
+    <input type="submit" value="Show Categories With Movie Count" />
+</form>
+@if (ViewBag.CategoriesWithMovieCount != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th>
+            @Html.DisplayNameFor(model => model.Movie_ID)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.User_ID)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model._Rate)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.Comment)
+            </th>*@
+                <th>
+                    {Category Name, Movie Count}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.CategoriesWithMovieCount)
+            {
+                <tr>
+                    <td>
+                        @item
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

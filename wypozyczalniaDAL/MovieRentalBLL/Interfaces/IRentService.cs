@@ -11,6 +11,8 @@ namespace MovieRentalBLL.Interfaces
     {
         public List<Rent> GetRentalsByUser(int userId);
         public List<Rent> GetRentalsByMovie(int movieId);
+        public List<User> GetAllUsers();
+        public List<Movie> GetAllMovies();
 
     }
 }
