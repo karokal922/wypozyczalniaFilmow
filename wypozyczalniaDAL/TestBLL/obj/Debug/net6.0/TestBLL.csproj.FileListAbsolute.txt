@@ -164,3 +164,5 @@ C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektP
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL\obj\Debug\net6.0\TestBLL.pdb
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL\obj\Debug\net6.0\TestBLL.genruntimeconfig.cache
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL\obj\Debug\net6.0\ref\TestBLL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\TestBLL\bin\Debug\net6.0\Moq.dll
