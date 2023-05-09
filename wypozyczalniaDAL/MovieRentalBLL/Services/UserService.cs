@@ -28,6 +28,8 @@ namespace MovieRentalBLL.Services
                     select user).ToList();
         }
 
+
+
         public IEnumerable<object> GetUsersWithRateCountSorted()
         {
             var users = unitOfWork.UserRepository.GetUsers();
