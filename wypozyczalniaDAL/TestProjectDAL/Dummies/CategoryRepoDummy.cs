@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
-namespace TestProjectDAL
+namespace TestProjectDAL.Dummies
 {
-    public class RateRepoDummy : IRateRepository
+    public class CategoryRepoDummy : ICategoryRepository
     {
-        public void DeleteRate(int id)
+        public void DeleteCategory(int id)
         {
             throw new NotImplementedException();
         }
@@ -20,17 +20,17 @@ namespace TestProjectDAL
             throw new NotImplementedException();
         }
 
-        public Rate GetRate(int id)
+        public IEnumerable<Category> GetCategories()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Rate> GetRates()
+        public Category GetCategory(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void InsertRate(Rate rate)
+        public void InsertCategory(Category category)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +40,7 @@ namespace TestProjectDAL
             throw new NotImplementedException();
         }
 
-        public void UpdateRate(Rate rate)
+        public void UpdateCategory(Category category)
         {
             throw new NotImplementedException();
         }

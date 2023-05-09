@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
-namespace TestDAL
+namespace TestProjectBLL.Fakes
 {
     public class MovieRepoFake : IMovieRepository
     {
@@ -16,14 +16,15 @@ namespace TestDAL
         public IReadOnlyList<Movie> AllMovies => _movies.AsReadOnly();
         public void DeleteMovie(int id)
         {
-            foreach(Movie movie in _movies) { 
-                if(movie.Id_Movie == id)
+            foreach (Movie movie in _movies)
+            {
+                if (movie.Id_Movie == id)
                 {
                     _movies.Remove(movie);
                 }
             }
         }
-     
+
         public void Dispose()
         {
             _movies.Clear();
@@ -53,8 +54,8 @@ namespace TestDAL
 
         public void UpdateMovie(Movie movie)
         {
-            int index=0;
-            foreach(Movie m in _movies)
+            int index = 0;
+            foreach (Movie m in _movies)
             {
                 if (m.Id_Movie == movie.Id_Movie)
                 {

@@ -3,8 +3,9 @@ using MovieRentalBLL.Services;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 using wypozyczalniaDAL.Repositories;
+using TestProjectBLL.Fakes;
 
-namespace TestDAL
+namespace TestProjectBLL.Tests
 {
     public class MovieRepoFakeTest
     {

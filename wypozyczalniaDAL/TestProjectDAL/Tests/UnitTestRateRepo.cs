@@ -5,7 +5,7 @@ using wypozyczalniaDAL.Repositories;
 using wypozyczalniaDAL;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace TestProjectDAL
+namespace TestProjectDAL.Tests
 {
     public class UnitTestRateRepo
     {
@@ -28,7 +28,7 @@ namespace TestProjectDAL
 
                 Assert.Empty(rateRepository.GetRates());
 
-                rateRepository.InsertRate(new wypozyczalniaDAL.Models.Rate {Id_Rate=1,Movie_ID=1,User_ID=1,Comment="xxx",_Rate=8.7 });
+                rateRepository.InsertRate(new Rate { Id_Rate = 1, Movie_ID = 1, User_ID = 1, Comment = "xxx", _Rate = 8.7 });
                 rateRepository.Save();
                 Assert.Equal(1, rateRepository.GetRates().Count());
             }

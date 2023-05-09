@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
-namespace TestProjectDAL
+namespace TestProjectDAL.Dummies
 {
     public class MovieRepoDummy : IMovieRepository
     {

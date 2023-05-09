@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 
-namespace TestProjectDAL
+namespace TestProjectDAL.Dummies
 {
-    public class RentRepoDummy : IRentRepository
+    public class PaymentRepoDummy : IPaymentRepository
     {
-        public void DeleteRent(int id)
+        public void DeletePayment(int id)
         {
             throw new NotImplementedException();
         }
@@ -20,17 +20,17 @@ namespace TestProjectDAL
             throw new NotImplementedException();
         }
 
-        public Rent GetRent(int id)
+        public Payment GetPayment(int id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Rent> GetRents()
+        public IEnumerable<Payment> GetPayments()
         {
             throw new NotImplementedException();
         }
 
-        public void InsertRent(Rent rent)
+        public void InsertPayment(Payment payment)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +40,7 @@ namespace TestProjectDAL
             throw new NotImplementedException();
         }
 
-        public void UpdateRent(Rent rent)
+        public void UpdatePayment(Payment payment)
         {
             throw new NotImplementedException();
         }
