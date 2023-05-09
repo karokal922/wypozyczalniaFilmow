@@ -21,7 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBLL", "TestBLL\TestBLL.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectBLL", "TestProjectBLL\TestProjectBLL.csproj", "{35459435-D517-47FF-95EE-D52F82ABC87A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectDAL", "TestProjectDAL\TestProjectDAL.csproj", "{F5D50141-3FEA-4297-9E1F-6876D109CC6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectDAL", "TestProjectDAL\TestProjectDAL.csproj", "{F5D50141-3FEA-4297-9E1F-6876D109CC6E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DCC8C8C-A2FB-43DB-AE6B-B294C471C806} = {9DCC8C8C-A2FB-43DB-AE6B-B294C471C806}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
