@@ -18,22 +18,25 @@ namespace wypozyczalniaDAL.Repositories
         //private GenericRepository<Rate> rateRepository;
         //private GenericRepository<Rent> rentRepository;
         //private GenericRepository<User> userRepository;
-        private CategoryRepository categoryRepository;
-        private MovieRepository movieRepository;
-        private PaymentRepository paymentRepository;
-        private RateRepository rateRepository;
-        private RentRepository rentRepository;
-        private UserRepository userRepository;
+        private CategoryRepository? categoryRepository;
+        private MovieRepository? movieRepository;
+        private PaymentRepository? paymentRepository;
+        private RateRepository? rateRepository;
+        private RentRepository? rentRepository;
+        private UserRepository? userRepository;
 
-        public UnitOfWork(MovieRentalContext context) 
+        public UnitOfWork(MovieRentalContext context, CategoryRepository? categoryRepository = null, MovieRepository? movieRepository = null,
+                          PaymentRepository? paymentRepository = null, RateRepository? rateRepository = null, RentRepository? rentRepository = null,
+                          UserRepository? userRepository = null)
         {
             this.context = context;
-            this.movieRepository = new MovieRepository(context);//new GenericRepository<Movie>(context);
-            this.categoryRepository = new CategoryRepository(context);//new GenericRepository<Category>(context);
-            this.paymentRepository = new PaymentRepository(context);//new GenericRepository<Payment>(context);
-            this.rateRepository = new RateRepository(context);//new GenericRepository<Rate>(context);
-            this.rentRepository = new RentRepository(context);//new GenericRepository<Rent>(context);
-            this.userRepository = new UserRepository(context);//new GenericRepository<User>(context);
+            this.categoryRepository = categoryRepository;
+            this.movieRepository = movieRepository;
+            this.paymentRepository = paymentRepository;
+            this.rateRepository = rateRepository;
+            this.rentRepository = rentRepository;
+            this.userRepository = userRepository;
+
         }
         public CategoryRepository CategoryRepository//GenericRepository<Category> CategoryRepository
         {
