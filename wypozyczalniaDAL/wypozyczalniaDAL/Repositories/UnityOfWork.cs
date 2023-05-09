@@ -11,7 +11,7 @@ namespace wypozyczalniaDAL.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private MovieRentalContext context /*= new MovieRentalContext()*/;
+        private MovieRentalContext context = new MovieRentalContext();
         //private GenericRepository<Category> categoryRepository;
         //private GenericRepository<Movie> movieRepository;
         //private GenericRepository<Payment> paymentRepository;

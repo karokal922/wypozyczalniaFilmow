@@ -9,6 +9,10 @@ namespace wypozyczalniaDAL.Models
 {
     public class MovieRentalContext : DbContext
     {
+        public MovieRentalContext()
+        {
+
+        }
         public MovieRentalContext(DbContextOptions options) : base(options)
         {
 
