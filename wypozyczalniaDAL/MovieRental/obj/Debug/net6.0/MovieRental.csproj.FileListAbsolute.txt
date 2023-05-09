@@ -866,3 +866,5 @@ C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektP
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MovieRental.props
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MovieRental.props
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\bin\Debug\net6.0\Castle.Core.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\bin\Debug\net6.0\Moq.dll

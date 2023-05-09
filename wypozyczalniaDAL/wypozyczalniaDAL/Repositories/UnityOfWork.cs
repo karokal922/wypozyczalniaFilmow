@@ -37,6 +37,10 @@ namespace wypozyczalniaDAL.Repositories
             this.rentRepository = rentRepository;
             this.userRepository = userRepository;
         }
+        public UnitOfWork(MovieRentalContext context)
+        {
+            this.context = context;
+        }
         public UnitOfWork(ICategoryRepository categoryRepository)
         {
             this.categoryRepository = categoryRepository;
