@@ -1,0 +1,5 @@
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestDAL\obj\Debug\net6.0\TestDAL.csproj.AssemblyReference.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestDAL\obj\Debug\net6.0\TestDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestDAL\obj\Debug\net6.0\TestDAL.AssemblyInfoInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestDAL\obj\Debug\net6.0\TestDAL.AssemblyInfo.cs
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\wypozyczalniaDAL\TestDAL\obj\Debug\net6.0\TestDAL.csproj.CoreCompileInputs.cache

@@ -10,7 +10,7 @@ using wypozyczalniaDAL.Models;
 
 namespace wypozyczalniaDAL.Repositories
 {
-    public class RentRepository : IRenRepository, IDisposable
+    public class RentRepository : IRentRepository, IDisposable
     {
         private MovieRentalContext context;
 

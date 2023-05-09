@@ -18,16 +18,16 @@ namespace wypozyczalniaDAL.Repositories
         //private GenericRepository<Rate> rateRepository;
         //private GenericRepository<Rent> rentRepository;
         //private GenericRepository<User> userRepository;
-        private CategoryRepository? categoryRepository;
-        private MovieRepository? movieRepository;
-        private PaymentRepository? paymentRepository;
-        private RateRepository? rateRepository;
-        private RentRepository? rentRepository;
-        private UserRepository? userRepository;
+        private ICategoryRepository categoryRepository;
+        private IMovieRepository movieRepository;
+        private IPaymentRepository paymentRepository;
+        private IRateRepository rateRepository;
+        private IRentRepository rentRepository;
+        private IUserRepository userRepository;
 
-        public UnitOfWork(MovieRentalContext context, CategoryRepository? categoryRepository = null, MovieRepository? movieRepository = null,
-                          PaymentRepository? paymentRepository = null, RateRepository? rateRepository = null, RentRepository? rentRepository = null,
-                          UserRepository? userRepository = null)
+        public UnitOfWork(MovieRentalContext context, ICategoryRepository categoryRepository, IMovieRepository movieRepository,
+                          IPaymentRepository paymentRepository, IRateRepository rateRepository, IRentRepository rentRepository,
+                          IUserRepository userRepository)
         {
             this.context = context;
             this.categoryRepository = categoryRepository;
@@ -36,9 +36,37 @@ namespace wypozyczalniaDAL.Repositories
             this.rateRepository = rateRepository;
             this.rentRepository = rentRepository;
             this.userRepository = userRepository;
-
         }
-        public CategoryRepository CategoryRepository//GenericRepository<Category> CategoryRepository
+        public UnitOfWork(ICategoryRepository categoryRepository)
+        {
+            this.categoryRepository = categoryRepository;
+        }
+
+        public UnitOfWork(IMovieRepository movieRepository)
+        {
+            this.movieRepository = movieRepository;
+        }
+
+        public UnitOfWork(IPaymentRepository paymentRepository)
+        {
+            this.paymentRepository = paymentRepository;
+        }
+
+        public UnitOfWork(IRateRepository rateRepository)
+        {
+            this.rateRepository = rateRepository;
+        }
+
+        public UnitOfWork(IRentRepository rentRepository)
+        {
+            this.rentRepository = rentRepository;
+        }
+
+        public UnitOfWork(IUserRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
+        public ICategoryRepository CategoryRepository//GenericRepository<Category> CategoryRepository
         {
             get
             {
@@ -50,7 +78,7 @@ namespace wypozyczalniaDAL.Repositories
             }
         }
 
-        public MovieRepository MovieRepository//GenericRepository<Movie> MovieRepository
+        public IMovieRepository MovieRepository//GenericRepository<Movie> MovieRepository
         {
             get
             {
@@ -62,7 +90,7 @@ namespace wypozyczalniaDAL.Repositories
             }
         }
 
-        public PaymentRepository PaymentRepository//GenericRepository<Payment> PaymentRepository
+        public IPaymentRepository PaymentRepository//GenericRepository<Payment> PaymentRepository
         {
             get
             {
@@ -73,7 +101,7 @@ namespace wypozyczalniaDAL.Repositories
                 return paymentRepository;
             }
         }
-        public RateRepository RateRepository//GenericRepository<Rate> RateRepository
+        public IRateRepository RateRepository//GenericRepository<Rate> RateRepository
         {
             get
             {
@@ -85,7 +113,7 @@ namespace wypozyczalniaDAL.Repositories
                 return rateRepository;
             }
         }
-        public RentRepository RentRepository//GenericRepository<Rent> RentRepository
+        public IRentRepository RentRepository//GenericRepository<Rent> RentRepository
         {
             get
             {
@@ -97,7 +125,7 @@ namespace wypozyczalniaDAL.Repositories
                 return rentRepository;
             }
         }
-        public UserRepository UserRepository//GenericRepository<User> UserRepository
+        public IUserRepository UserRepository//GenericRepository<User> UserRepository
         {
             get
             {

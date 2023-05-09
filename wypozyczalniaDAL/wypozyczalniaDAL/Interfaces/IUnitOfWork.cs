@@ -16,12 +16,12 @@ namespace wypozyczalniaDAL.Interfaces
         //public GenericRepository<Rate> RateRepository { get; }
         //public GenericRepository<Rent> RentRepository { get; }
         //public GenericRepository<User> UserRepository { get; }
-        public CategoryRepository CategoryRepository { get; }
-        public MovieRepository MovieRepository { get; }
-        public PaymentRepository PaymentRepository { get; }
-        public RateRepository RateRepository { get; }
-        public RentRepository RentRepository { get; }
-        public UserRepository UserRepository { get; }
+        public ICategoryRepository CategoryRepository { get; }
+        public IMovieRepository MovieRepository { get; }
+        public IPaymentRepository PaymentRepository { get; }
+        public IRateRepository RateRepository { get; }
+        public IRentRepository RentRepository { get; }
+        public IUserRepository UserRepository { get; }
         public void Save();
     }
 }

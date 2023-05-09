@@ -7,7 +7,7 @@ using wypozyczalniaDAL.Models;
 
 namespace wypozyczalniaDAL.Interfaces
 {
-    public interface IRenRepository : IDisposable
+    public interface IRentRepository : IDisposable
     {
         IEnumerable<Rent> GetRents();
         Rent GetRent(int id);

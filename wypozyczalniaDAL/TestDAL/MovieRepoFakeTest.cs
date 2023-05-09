@@ -1,6 +1,6 @@
 namespace TestDAL
 {
-    public class UnitTest1
+    public class MovieRepoFakeTest
     {
         [Fact]
         public void Test1()
