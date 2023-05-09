@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj": {}
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
         "projectName": "MovieRentalBLL",
-        "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
-        "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
+              "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+                "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
               }
             }
           }
@@ -69,25 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj",
         "projectName": "TestProjectBLL",
-        "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj",
-        "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\TestProjectBLL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,11 +93,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj"
+              "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj": {
+                "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj"
               },
-              "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
+              "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+                "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
               }
             }
           }
@@ -161,25 +153,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
         "projectName": "wypozyczalniaDAL",
-        "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
-        "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -250,7 +238,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

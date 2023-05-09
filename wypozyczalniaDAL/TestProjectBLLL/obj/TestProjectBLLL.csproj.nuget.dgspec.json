@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj": {}
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj",
         "projectName": "TestProjectBLLL",
-        "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj",
-        "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\TestProjectBLLL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectBLLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
