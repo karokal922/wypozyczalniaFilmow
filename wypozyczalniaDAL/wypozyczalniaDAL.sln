@@ -26,7 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectDAL", "TestProje
 		{9DCC8C8C-A2FB-43DB-AE6B-B294C471C806} = {9DCC8C8C-A2FB-43DB-AE6B-B294C471C806}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControllersMVC", "TestControllersMVC\TestControllersMVC.csproj", "{87A19682-0247-42E2-A1CE-C281D8D415C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestControllersMVC", "TestControllersMVC\TestControllersMVC.csproj", "{87A19682-0247-42E2-A1CE-C281D8D415C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E098A49-6847-4BC1-9340-EF8586A58993} = {9E098A49-6847-4BC1-9340-EF8586A58993}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
