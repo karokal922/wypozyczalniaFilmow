@@ -8,6 +8,10 @@ namespace TestControllersMVC.ControllerTests
 {
     public class UnitTestRatingsController
     {
+        [Fact]
+        public void TestGetAverageRatePerMovieAction()
+        {
 
+        }
     }
 }
