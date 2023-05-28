@@ -3378,19 +3378,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Karol\\.nuget\\packages\\": {}
+    "C:\\Users\\Paweł\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
       "projectName": "MovieRentalBLL",
-      "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
-      "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\obj\\",
+      "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj",
+      "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3404,8 +3409,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
-              "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
+            "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
             }
           }
         }
@@ -3441,7 +3446,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
