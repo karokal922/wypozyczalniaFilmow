@@ -9,6 +9,10 @@ namespace TestBLL.Controllers
     public class RateApiController : ControllerBase
     {
         private readonly IRateService _rateService;
+        public RateApiController(IRateService rateService)
+        {
+            this._rateService = rateService;
+        }
         [HttpGet("GetAverageRatePerMovie")]
         public IEnumerable<object> GetAverageRatePerMovie()
         {
