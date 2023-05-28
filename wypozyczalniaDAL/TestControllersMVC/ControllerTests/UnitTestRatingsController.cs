@@ -22,7 +22,7 @@ namespace TestControllersMVC.ControllerTests
                 new {  MovieId = 1, AverageRate = 5.12},
                 new {  MovieId = 2, AverageRate = 3.32},
                 new {  MovieId = 3, AverageRate = 7.56},
-                new {  MovieId = 4, AverageRate = 9.52},
+                new {  MovieId = 4, AverageRate = 9.52}
             };
 
             mockRateService

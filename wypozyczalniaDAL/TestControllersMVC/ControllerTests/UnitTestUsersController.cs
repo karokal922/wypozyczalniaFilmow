@@ -24,7 +24,7 @@ namespace TestControllersMVC.ControllerTests
                 new { Name = "Jan", Surname = "Dziki", RateCount = 30 },
                 new { Name = "Karol", Surname = "Taki", RateCount = 10 },
                 new { Name = "Paweł", Surname = "Jaki", RateCount = 20 },
-                new { Name = "Piotr", Surname = "Gdzie", RateCount = 123 },
+                new { Name = "Piotr", Surname = "Gdzie", RateCount = 123 }
             };
 
             mockUserService
