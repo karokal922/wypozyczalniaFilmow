@@ -10,6 +10,12 @@ namespace TestBLL.Controllers
     public class RentApiController : ControllerBase
     {
         private readonly IRentService _service;
+        private IRentService @object;
+
+        public RentApiController(IRentService service)
+        {
+            this._service = service;
+        }
 
         [HttpGet("GetRentalsByUser")]
         public List<Rent> GetRentalsByUser(int userId)
