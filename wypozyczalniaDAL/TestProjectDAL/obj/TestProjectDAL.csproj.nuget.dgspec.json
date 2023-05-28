@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj": {}
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj",
         "projectName": "TestProjectDAL",
-        "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj",
-        "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\TestProjectDAL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\TestProjectDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
-                "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
+              "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+                "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
+    "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
+        "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
         "projectName": "wypozyczalniaDAL",
-        "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
-        "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\obj\\",
+        "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
