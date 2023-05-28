@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<wypozyczalniaDAL.Models.Rent>
-@if (ViewBag.RentalByUser!=null){
+@if (ViewBag.RentalsByUser!=null){
 <table class="table">
     <thead>
         <tr>
@@ -16,7 +16,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in ViewBag.RentalByUser)
+        @foreach (var item in ViewBag.RentalsByUser)
         {
             <tr>
                 <td>

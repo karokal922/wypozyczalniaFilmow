@@ -25,5 +25,8 @@
   <ItemGroup>
     <ProjectReference Include="..\wypozyczalniaDAL\wypozyczalniaDAL.csproj" />
   </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MovieRentalBLL\MovieRentalBLL.csproj" />
+	</ItemGroup>
 
 </Project>

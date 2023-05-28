@@ -25,7 +25,7 @@ namespace TestBLL.Controllers
 
         public IActionResult ShowAverageRatePerUser()
         {
-            ViewBag.AverageRatePerUser = _rateService.GetAverageRatePerMovie();
+            ViewBag.AverageRatePerUser = _rateService.GetAverageRatePerUser();
             return View("Index");
         }
     }

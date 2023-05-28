@@ -20,13 +20,13 @@ namespace TestBLL.Controllers
 
         public IActionResult GetRentalsByMovie(int id)
         {
-            ViewBag.RentalByMovie = _rentService.GetRentalsByMovie(id);
+            ViewBag.RentalsByMovie = _rentService.GetRentalsByMovie(id);
             return View("RentalsByMovie");
         }
         public IActionResult GetRentalsByUser(int id)
         {
-            ViewBag.RentalByUser = _rentService.GetRentalsByUser(id);
-            return View("RentalsByMovie");
+            ViewBag.RentalsByUser = _rentService.GetRentalsByUser(id);
+            return View("RentalsByUser");
         }
     }
 }
