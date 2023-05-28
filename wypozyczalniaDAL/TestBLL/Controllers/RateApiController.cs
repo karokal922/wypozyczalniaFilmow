@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MovieRentalBLL.Interfaces;
 
 namespace TestBLL.Controllers
 {
@@ -7,5 +8,16 @@ namespace TestBLL.Controllers
     [ApiController]
     public class RateApiController : ControllerBase
     {
+        private readonly IRateService _rateService;
+        [HttpGet("GetAverageRatePerMovie")]
+        public IEnumerable<object> GetAverageRatePerMovie()
+        {
+            return _rateService.GetAverageRatePerMovie();
+        }
+        [HttpGet("GetAverageRatePerUser")]
+        public IEnumerable<object> GetAverageRatePerUser()
+        {
+            return _rateService.GetAverageRatePerUser();
+        }
     }
 }
