@@ -3753,6 +3753,20 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "MovieRentalBLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Moq": "4.18.4",
+          "wypozyczalniaDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieRentalBLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieRentalBLL.dll": {}
+        }
+      },
       "wypozyczalniaDAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10649,6 +10663,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "MovieRentalBLL/1.0.0": {
+      "type": "project",
+      "path": "../MovieRentalBLL/MovieRentalBLL.csproj",
+      "msbuildProject": "../MovieRentalBLL/MovieRentalBLL.csproj"
+    },
     "wypozyczalniaDAL/1.0.0": {
       "type": "project",
       "path": "../wypozyczalniaDAL/wypozyczalniaDAL.csproj",
@@ -10664,6 +10683,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.13",
       "Moq >= 4.18.4",
+      "MovieRentalBLL >= 1.0.0",
       "wypozyczalniaDAL >= 1.0.0"
     ]
   },
@@ -10694,6 +10714,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj": {
+              "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\MovieRentalBLL\\MovieRentalBLL.csproj"
+            },
             "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj": {
               "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\wypozyczalniaDAL\\wypozyczalniaDAL\\wypozyczalniaDAL.csproj"
             }

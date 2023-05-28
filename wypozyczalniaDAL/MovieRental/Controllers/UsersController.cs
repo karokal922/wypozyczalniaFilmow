@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MovieRentalBLL.Interfaces;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 using wypozyczalniaDAL.Repositories;
+
 
 namespace MovieRental.Controllers
 {

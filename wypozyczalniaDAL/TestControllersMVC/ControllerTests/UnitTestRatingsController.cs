@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TestControllersMVC.ControllerTests
 {
-    internal class UnitTestRatingsController
+    public class UnitTestRatingsController
     {
+
     }
 }

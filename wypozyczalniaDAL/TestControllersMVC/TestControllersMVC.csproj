@@ -27,5 +27,8 @@
 	<ItemGroup>
 		<ProjectReference Include="..\MovieRentalBLL\MovieRentalBLL.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\TestBLL\TestBLL.csproj" />
+	</ItemGroup>
 
 </Project>
