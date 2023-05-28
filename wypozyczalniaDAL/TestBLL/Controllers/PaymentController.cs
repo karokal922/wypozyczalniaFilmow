@@ -22,5 +22,11 @@ namespace TestBLL.Controllers
             ViewBag.PaymentsInRange = _paymentService.GetPaymentsInRange(min_price, max_price);
             return View("Index");
         }
+
+        public IActionResult ShowAveragePaymentValueForUser(int userId, DateTime startDate, DateTime endDate)
+        {
+            ViewBag.AveragePayment = _paymentService.GetAveragePaymentValue(userId,startDate,endDate);
+            return View("Index");
+        }
     }
 }
