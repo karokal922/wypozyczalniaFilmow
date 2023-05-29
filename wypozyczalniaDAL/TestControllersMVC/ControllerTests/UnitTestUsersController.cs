@@ -39,7 +39,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["UsersWithRateCount"]);
+            Assert.Same(lista, viewResult.ViewData["UsersWithRateCount"]);
         }
         [Fact]
         public void TestGetUsersByNameSortedAction() 
@@ -65,7 +65,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["Users"]);
+            Assert.Same(lista, viewResult.ViewData["Users"]);
         }
     }
 }

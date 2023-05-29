@@ -34,7 +34,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(categoriesWithMovieCount, viewResult.ViewData["CategoriesWithMovieCount"]);
+            Assert.Same(categoriesWithMovieCount, viewResult.ViewData["CategoriesWithMovieCount"]);
         }
     }
 }

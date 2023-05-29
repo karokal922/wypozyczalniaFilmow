@@ -64,7 +64,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(movies, viewResult.ViewData["MoviesFromCategory"]);
+            Assert.Same(movies, viewResult.ViewData["MoviesFromCategory"]);
         }
         [Fact]
         public void TestSortMoviesByRatingsInGivenYearAction()
@@ -130,7 +130,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(movies, viewResult.ViewData["Movies"]);
+            Assert.Same(movies, viewResult.ViewData["Movies"]);
         }
     }
 }

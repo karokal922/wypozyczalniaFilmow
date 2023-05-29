@@ -5,160 +5,161 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MovieRental
 build_property.RootNamespace = MovieRental
-build_property.ProjectDir = C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\
+build_property.ProjectDir = C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental
+build_property.MSBuildProjectDirectory = C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\wypozyczalniaDAL\MovieRental
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Home/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Home/Privacy.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Payments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Ratings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Rentals/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/Error.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/_ViewImports.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/_ViewStart.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Desktop/Projekt_TAIIB/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/_Layout.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/wypozyczalniaDAL/MovieRental/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ndpi32gl22

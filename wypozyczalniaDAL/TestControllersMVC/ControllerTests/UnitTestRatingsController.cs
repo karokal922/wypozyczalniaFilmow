@@ -36,7 +36,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["AverageRatePerMovie"]);
+            Assert.Same(lista, viewResult.ViewData["AverageRatePerMovie"]);
         }
         [Fact]
         public void TestGetAverageRatePerUserAction()
@@ -62,7 +62,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["AverageRatePerUser"]);
+            Assert.Same(lista, viewResult.ViewData["AverageRatePerUser"]);
         }
     }
 }

@@ -37,7 +37,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["RentalsByUser"]);
+            Assert.Same(lista, viewResult.ViewData["RentalsByUser"]);
         }
         [Fact]
         public void TestGetRentalsByMovieAction()
@@ -63,7 +63,7 @@ namespace TestControllersMVC.ControllerTests
             Assert.IsType<ViewResult>(result);
 
             var viewResult = (ViewResult)result;
-            Assert.Equal(lista, viewResult.ViewData["RentalsByMovie"]);
+            Assert.Same(lista, viewResult.ViewData["RentalsByMovie"]);
         }
     }
 }
