@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MovieRental.Models;
 using wypozyczalniaDAL.Interfaces;
 using wypozyczalniaDAL.Models;
 using wypozyczalniaDAL.Repositories;
 
 namespace MovieRental.Controllers
 {
+    //[Route("api/[controller]")]
     public class PaymentsController : Controller
     {
         //private UnitOfWork unitOfWork = new UnitOfWork();
@@ -23,11 +25,18 @@ namespace MovieRental.Controllers
             this.unitOfWork = new UnitOfWork(context);
         }
 
-        // GET: Payments
+        //GET: Payments
         public ActionResult Index()
         {
             var payments = unitOfWork.PaymentRepository.GetPayments();//Get(includeProperties: "");
             return View(payments.ToList());
+        }
+        [HttpGet]
+        [Route("api/payments")]
+        public IEnumerable<PaymentResponse> Get()
+        {
+            var payments = unitOfWork.PaymentRepository.GetPayments();
+            return payments.Select(x => new PaymentResponse(x.Id_Payment, x.Price));
         }
 
         // GET: Payments/Details/5

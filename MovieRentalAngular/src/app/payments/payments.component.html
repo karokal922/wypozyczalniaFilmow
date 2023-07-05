@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let payment of payments">
+            <td>{{payment.id_Payment}}</td>
+            <td>{{payment.price}}</td>
+            <td>
+                <button (click)="onDeleteClick(payment)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
