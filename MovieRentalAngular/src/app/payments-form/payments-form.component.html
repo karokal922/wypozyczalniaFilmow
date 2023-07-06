@@ -1,0 +1,11 @@
+<form *ngIf="form" [formGroup]="form" (submit)="onSubmit()">
+    <div>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" formControlName="price" />
+        <span *ngIf="showError('price')">Error</span>
+    </div>
+    <div>
+        <input type="submit" [disabled]="form.invalid" />
+        <button (click)="onCancelClick()" type="button">Cancel</button>
+    </div>
+</form>

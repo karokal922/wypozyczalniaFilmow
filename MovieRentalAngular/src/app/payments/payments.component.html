@@ -1,3 +1,4 @@
+<a routerLink="add">Add new</a>
 <table>
     <thead>
         <tr>
@@ -11,6 +12,9 @@
             <td>{{payment.price}}</td>
             <td>
                 <button (click)="onDeleteClick(payment)">Delete</button>
+            </td>
+            <td>
+                <a [routerLink]="payment.id_Payment + '/edit'">Edit</a>
             </td>
         </tr>
     </tbody>
