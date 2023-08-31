@@ -1,0 +1,58 @@
+﻿@model MovieRental.DAL.Models.Movie
+
+@{
+    ViewData["Title"] = "Create";
+}
+@if (!string.IsNullOrEmpty(ViewData["NotificationMessage"] as string))
+{
+    <script>
+        alert('@Html.Raw(ViewData["NotificationMessage"])');
+    </script>
+}
+<h1>Create</h1>
+
+<h4>Movie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Director" class="control-label"></label>
+                <input asp-for="Director" class="form-control" />
+                <span asp-validation-for="Director" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Premiere" class="control-label"></label>
+                <input asp-for="Premiere" class="form-control" />
+                <span asp-validation-for="Premiere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RentId" class="control-label"></label>
+                <select asp-for="RentId" class ="form-control" asp-items="ViewBag.RentId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoriesIds" class="control-label"></label>
+                <select asp-for="CategoriesIds" class="form-control" asp-items="ViewBag.Categories" multiple></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

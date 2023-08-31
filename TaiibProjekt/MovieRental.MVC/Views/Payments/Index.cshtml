@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MovieRental.DAL.Models.Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rent)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rent.Id_Rent)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Payment">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Payment">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Payment">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
