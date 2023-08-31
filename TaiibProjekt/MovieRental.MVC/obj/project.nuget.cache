@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5JCcnKgkmRA8UDL/67aUVoebWPlIkoFJx9UBuJt5A0IegoAVPe+4nTjYgRoBEkqCA8Za4OjSHtguyMLn6yenaQ==",
+  "dgSpecHash": "rdI57R1lb1StH1WNLl+R9ITnWO/Ey+BS2pczCNKI8b+RpupZcLWOP4nb0K30b6nPuLgtxK8iH0kcN2SGaynBRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\MovieRental.MVC\\MovieRental.MVC.csproj",
+  "projectFilePath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.MVC\\MovieRental.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Karol\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Karol\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

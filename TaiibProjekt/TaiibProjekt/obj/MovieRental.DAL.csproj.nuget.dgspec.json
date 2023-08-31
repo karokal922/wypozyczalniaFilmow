@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {}
+    "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {
+    "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj",
         "projectName": "MovieRental.DAL",
-        "projectPath": "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj",
+        "projectPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj",
         "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karol\\Desktop\\TaiibProjekt\\TaiibProjekt\\obj\\",
+        "outputPath": "C:\\Users\\Karol\\Desktop\\SZKOŁA\\studia\\PPK\\5sem\\cpp\\projekt\\ProjektPIPAO\\ProjektPIPAO\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",

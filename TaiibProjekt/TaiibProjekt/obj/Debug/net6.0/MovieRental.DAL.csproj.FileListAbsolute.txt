@@ -12,3 +12,17 @@ C:\Users\Karol\Desktop\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\refint\MovieRe
 C:\Users\Karol\Desktop\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.pdb
 C:\Users\Karol\Desktop\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.genruntimeconfig.cache
 C:\Users\Karol\Desktop\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\ref\MovieRental.DAL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.deps.json
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.runtimeconfig.json
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.pdb
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.csproj.AssemblyReference.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.AssemblyInfoInputs.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.AssemblyInfo.cs
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\refint\MovieRental.DAL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.pdb
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.genruntimeconfig.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\ref\MovieRental.DAL.dll

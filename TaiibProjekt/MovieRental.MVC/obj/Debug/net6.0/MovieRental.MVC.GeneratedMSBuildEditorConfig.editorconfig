@@ -9,157 +9,157 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MovieRental.MVC
 build_property.RootNamespace = MovieRental.MVC
-build_property.ProjectDir = C:\Users\Karol\Desktop\TaiibProjekt\MovieRental.MVC\
+build_property.ProjectDir = C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Karol\Desktop\TaiibProjekt\MovieRental.MVC
+build_property.MSBuildProjectDirectory = C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Categories/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Categories/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Categories/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Categories/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Categories/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Home/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Home/Privacy.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Movies/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Movies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Movies/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Movies/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Movies/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Movies/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Movies/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Movies/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Movies/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Movies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Payments/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Payments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Payments/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Payments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Payments/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Payments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Payments/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Payments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Payments/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Payments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rates/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rates/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rates/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rates/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rates/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rates/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rates/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rates/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rates/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rates/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rents/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rents/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rents/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rents/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rents/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rents/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rents/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rents/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Rents/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Rents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Shared/Error.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Users/Create.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Users/Delete.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Users/Details.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Users/Edit.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Users/Index.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/_ViewImports.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/_ViewStart.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Karol/Desktop/TaiibProjekt/MovieRental.MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Karol/Desktop/SZKOŁA/studia/PPK/5sem/cpp/projekt/ProjektPIPAO/ProjektPIPAO/wypozyczalniaFilmow/TaiibProjekt/MovieRental.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kyqw2ama8p
