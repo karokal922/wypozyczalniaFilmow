@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MovieRental.BLL.MVC.props" />
+</Project>

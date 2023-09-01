@@ -1,0 +1,15 @@
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.deps.json
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.pdb
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.DAL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.DAL.pdb
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.AssemblyReference.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.AssemblyInfoInputs.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.AssemblyInfo.cs
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.CopyComplete
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\refint\MovieRental.BLL.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.pdb
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\ref\MovieRental.BLL.dll

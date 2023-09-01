@@ -1,0 +1,63 @@
+﻿@using MovieRental.BLL.Services;
+@using MovieRental.DAL.Models;
+<h1>PAYMENT CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowPaymentsInRange" asp-controller="Payment" method="get">
+    Minimal price:<input type="text" name="min_price" /><br />
+    Maximal price:<input type="text" name="max_price" /><br />
+    <input type="submit" value="Show Payments In Range" />
+</form>
+
+@if (ViewBag.PaymentsInRange != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.RentId)</th>
+                <th>@Html.DisplayNameFor(model => model.Price)</th>
+                <th>@Html.DisplayNameFor(model => model.Rent.RentingDate)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Payment item in ViewBag.PaymentsInRange)
+            {
+                <tr>
+                    <td>@item.RentId</td>
+                    <td>@item.Price</td>
+                    <td>@item.Rent.RentingDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<form asp-action="ShowAveragePaymentValueForUser" asp-controller="Payment" method="get">
+    User ID: <input type="number" name="userId" /><br />
+    <input type="submit" value="Show Average Payment Value For User" />
+</form>
+
+@if (ViewBag.AveragePayment != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Rent.User.Name)</th>
+                <th>Average Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                UserAveragePaymentResult item = ViewBag.AveragePayment;
+                <tr>
+                    <td>@item.UserName</td>
+                    <td>@(Math.Round(item.AveragePayment, 1))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

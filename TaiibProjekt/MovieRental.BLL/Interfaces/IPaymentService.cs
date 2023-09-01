@@ -1,4 +1,5 @@
-﻿using MovieRental.DAL.Models;
+﻿using MovieRental.BLL.Services;
+using MovieRental.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace MovieRental.BLL.Interfaces
 {
     public interface IPaymentService
     {
-        public double GetAveragePaymentValue(int userId, DateTime startDate, DateTime endDate);
+        public UserAveragePaymentResult GetUserAveragePaymentValue(int userId);
         public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice);
     }
 }

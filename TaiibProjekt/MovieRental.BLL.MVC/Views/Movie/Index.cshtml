@@ -1,0 +1,62 @@
+﻿@using MovieRental.DAL.Models;
+<h1>MOVIE CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowMovies" asp-controller="Movie" method="get">
+    Year of Production:<input type="text" name="year" /><br />
+    <input type="submit" value="Send" />
+</form>
+<br />
+
+@if (ViewBag.Movies != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Premiere</th>
+                <th>Description</th>
+                <th>Average Rating</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (Movie item in ViewBag.Movies)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Director</td>
+                    <td>@item.Premiere</td>
+                    <td>@item.Description</td>
+                    <td>@(Math.Round(item.Rates.Average(r => r.RateValue), 1))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (ViewBag.AllCategories != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>CategoryName</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Category item in ViewBag.AllCategories)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td><a asp-action="GetAllMoviesWithGivenCategory" asp-route-id="@item.Id_Category">Show all movies from this category</a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

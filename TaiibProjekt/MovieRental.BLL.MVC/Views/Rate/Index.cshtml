@@ -1,0 +1,60 @@
+﻿@using MovieRental.BLL.Services;
+@using MovieRental.DAL.Models;
+<h1>RATE CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.Rate>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowAverageRatePerMovie" asp-controller="Rate">
+    <input type="submit" value="Show Average Rate Per Movie" />
+</form>
+@if (ViewBag.AverageRatePerMovie != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MovieId)</th>
+                <th>@Html.DisplayNameFor(model => model.Movie.Title)</th>
+                <th>Average Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (MovieRatingResult item in ViewBag.AverageRatePerMovie)
+            {
+                <tr>
+                    <td>@item.MovieId</td>
+                    <td>@item.MovieTitle</td>
+                    <td>@(Math.Round(item.AverageRate, 1))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<hr />
+<form asp-action="ShowAverageRatePerUser" asp-controller="Rate">
+    <input type="submit" value="Show Average Rate Per User" />
+</form>
+@if (ViewBag.AverageRatePerUser != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.UserId)</th>
+                <th>@Html.DisplayNameFor(model => model.User.Name)</th>
+                <th>Average Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (UserRatingResult item in ViewBag.AverageRatePerUser)
+            {
+                <tr>
+                    <td>@item.UserId</td>
+                    <td>@item.UserName</td>
+                    <td>@(Math.Round(item.AverageRate, 1))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

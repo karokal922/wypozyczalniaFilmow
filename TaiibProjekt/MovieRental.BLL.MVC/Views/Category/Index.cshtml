@@ -1,0 +1,32 @@
+﻿@using MovieRental.BLL.Services;
+@using MovieRental.DAL.Models;
+<h1>CATEGORY CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowCategoriesWithMovieCount" asp-controller="Category">
+    <input type="submit" value="Show Categories With Movie Count" />
+</form>
+@if (ViewBag.CategoriesWithMovieCount != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.CategoryName)</th>
+                <th>Movie Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (CategoryMovieCountResult item in ViewBag.CategoriesWithMovieCount)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>@item.MovieCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

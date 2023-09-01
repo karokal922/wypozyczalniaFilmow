@@ -1,4 +1,5 @@
 ﻿using MovieRental.DAL.Interfaces;
+using MovieRental.BLL.Interfaces;
 using MovieRental.DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieRental.BLL.Services
 {
-    public class RentService
+    public class RentService : IRentService
     {
         private readonly IUnitOfWork unitOfWork;
 

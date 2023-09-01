@@ -1,0 +1,60 @@
+﻿@using MovieRental.BLL.Services;
+@using MovieRental.DAL.Models;
+<h1>USER CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-action="ShowUsers" asp-controller="User" method="get">
+    Name of user:<input type="text" name="username" /><br />
+    <input type="submit" value="Send" />
+</form>
+@if (ViewBag.Users != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Surname)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.Users)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<hr></hr>
+<form asp-action="ShowUsersWithRateCount" asp-controller="User">
+    <input type="submit" value="Get Users with Rate Count" />
+</form>
+@if (ViewBag.UsersWithRateCount != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Rate Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (UserRateViewModel item in ViewBag.UsersWithRateCount)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td>@item.RateCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

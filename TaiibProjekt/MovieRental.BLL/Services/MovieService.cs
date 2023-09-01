@@ -1,5 +1,6 @@
 ﻿using MovieRental.DAL.Interfaces;
 using MovieRental.DAL.Models;
+using MovieRental.BLL.Interfaces;
 using MovieRental.DAL.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MovieRental.BLL.Services
 {
-    public class MovieService
+    public class MovieService : IMovieService
     {
         private readonly IUnitOfWork unitOfWork;
         public MovieService(IUnitOfWork unitOfWork)
@@ -45,7 +46,7 @@ namespace MovieRental.BLL.Services
 
             return result;
         }
-        public IEnumerable<Movie> SortMoviesByRatingsInGivenYear(int year)
+        public IEnumerable<Movie> SortMoviesByAvgRatingsInGivenYear(int year)
         {
             var movies = unitOfWork.MovieRepository.GetMovies().Where(m => m.Premiere.Year == year)
                 .OrderByDescending(m=>m.Rates.Average(r=>r.RateValue)).ToList();

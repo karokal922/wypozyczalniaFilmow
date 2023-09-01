@@ -1,0 +1,29 @@
+﻿@using MovieRental.DAL.Models;
+@model IEnumerable<MovieRental.DAL.Models.Rent>
+@if (ViewBag.RentalsByUser != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id_Rent)</th>
+                <th>@Html.DisplayNameFor(model => model.Payment.Price)</th>
+                <th>@Html.DisplayNameFor(model => model.User.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.RentingDate)</th>
+                <th>@Html.DisplayNameFor(model => model.Movies)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Rent item in ViewBag.RentalsByUser)
+            {
+                <tr>
+                    <td>@item.Id_Rent</td>
+                    <td>@item.Payment.Price</td>
+                    <td>@item.User.Name</td>
+                    <td>@item.RentingDate</td>
+                    <td>@item.Movies.Count()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

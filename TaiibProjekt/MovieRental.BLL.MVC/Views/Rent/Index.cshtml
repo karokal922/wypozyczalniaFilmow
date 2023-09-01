@@ -1,0 +1,56 @@
+﻿@using MovieRental.DAL.Models;
+<h1>RENT CONTROLLER</h1>
+@model IEnumerable<MovieRental.DAL.Models.Rent>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (ViewBag.AllUsers != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User item in ViewBag.AllUsers)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td><a asp-action="GetRentalsByUser" asp-route-id="@item.Id_User">Get Rental</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (ViewBag.AllMovies != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Premiere</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Movie item in ViewBag.AllMovies)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Director</td>
+                    <td>@item.Premiere</td>
+                    <td>@item.Description</td>
+                    <td><a asp-action="GetRentalsByMovie" asp-route-id="@item.Id_Movie">Get Rentals</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

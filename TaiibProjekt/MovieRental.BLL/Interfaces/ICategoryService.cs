@@ -1,4 +1,5 @@
-﻿using MovieRental.DAL.Models;
+﻿using MovieRental.BLL.Services;
+using MovieRental.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,6 @@ namespace MovieRental.BLL.Interfaces
 {
     public interface ICategoryService
     {
-        Dictionary<string, List<string>> GetMovieTitlesByCategories(params string[] categories);
-        IEnumerable<object> GetCategoriesWithMovieCount();
+        IEnumerable<CategoryMovieCountResult> GetCategoriesWithMovieCount();
     }
 }

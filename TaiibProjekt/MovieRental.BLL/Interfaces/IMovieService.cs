@@ -10,7 +10,7 @@ namespace MovieRental.BLL.Interfaces
     public interface IMovieService
     {
         IEnumerable<Movie> GetMoviesByCategory(int category_id);
-        IEnumerable<Movie> SortMoviesByRatingsInGivenYear(int year);
+        IEnumerable<Movie> SortMoviesByAvgRatingsInGivenYear(int year);
         IEnumerable<Category> GetAllCategories();
     }
 }

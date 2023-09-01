@@ -1,14 +1,15 @@
 ﻿using MovieRental.DAL.Interfaces;
-using MovieRental.DAL.Repositories;
+using MovieRental.BLL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MovieRental.DAL.Models;
 
 namespace MovieRental.BLL.Services
 {
-    public class CategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly IUnitOfWork unitOfWork;
 
@@ -17,31 +18,22 @@ namespace MovieRental.BLL.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<object> GetCategoriesWithMovieCount()
+        public IEnumerable<CategoryMovieCountResult> GetCategoriesWithMovieCount()
         {
             var categories = unitOfWork.CategoryRepository.GetCategories();
 
             return (from category in categories
                     let movieCount = category.Movies.Count()
-                    select new
+                    select new CategoryMovieCountResult
                     {
                         CategoryName = category.CategoryName,
                         MovieCount = movieCount
                     }).ToList();
         }
-        public Dictionary<string, List<string>> GetMovieTitlesByCategories(params string[] categories)
-        {
-            var movies = unitOfWork.MovieRepository.GetMovies();
-
-            return (from movie in movies
-                    from category in movie.Categories
-                    where categories.Contains(category.CategoryName.ToLower())
-                    group movie.Title by category.CategoryName into categoryGroup
-                    select new
-                    {
-                        Category = categoryGroup.Key,
-                        Movies = categoryGroup.ToList()
-                    }).ToDictionary(x => x.Category, x => x.Movies);
-        }
+    }
+    public class CategoryMovieCountResult
+    {
+        public string CategoryName { get; set; }
+        public int MovieCount { get; set; }
     }
 }
