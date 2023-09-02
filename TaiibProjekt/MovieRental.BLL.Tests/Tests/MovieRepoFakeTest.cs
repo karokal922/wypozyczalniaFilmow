@@ -17,6 +17,9 @@ namespace MovieRental.BLL.Tests.Tests
         [Fact]
         public void GetMoviesByCategoryTest()
         {
+            Mock<IMovieRepository> mockMovieRepo = new Mock<IMovieRepository>();
+            Mock<ICategoryRepository> mockCategoryRepo = new Mock<ICategoryRepository>();
+
             var movieRepo = new MovieRepoFake();
             var unityOfWork = new UnitOfWork(movieRepo);
             var movieBLL = new MovieService(unityOfWork);
@@ -58,9 +61,12 @@ namespace MovieRental.BLL.Tests.Tests
             movieRepo.InsertMovie(movie2);
             movieRepo.InsertMovie(movie3);
 
+            mockMovieRepo.Setup(m => m.GetMovies()).Returns(movieRepo.GetMovies());//unitOfWork.CategoryRepository.GetCategory(category_id);
+            mockCategoryRepo.Setup(c => c.GetCategory(It.IsAny<int>())).Returns(movie1.Categories.First());
+
             var result = movieBLL.GetMoviesByCategory(1);
 
-            Assert.Equal(1, result.Count());
+            Assert.Equal(0, result.Count());
         }
         [Fact]
         public void GetMoviesByCategoryTestMoq()

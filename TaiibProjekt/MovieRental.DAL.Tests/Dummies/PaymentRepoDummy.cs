@@ -10,37 +10,37 @@ namespace MovieRental.DAL.Tests.Dummies
 {
     public class PaymentRepoDummy : IPaymentRepository
     {
-        void IPaymentRepository.DeletePayment(int id)
+        public void DeletePayment(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        Payment IPaymentRepository.GetPayment(int id)
+        public Payment GetPayment(int id)
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<Payment> IPaymentRepository.GetPayments()
+        public IEnumerable<Payment> GetPayments()
         {
             throw new NotImplementedException();
         }
 
-        int IPaymentRepository.InsertPayment(Payment payment)
+        public int InsertPayment(Payment payment)
         {
             throw new NotImplementedException();
         }
 
-        void IPaymentRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void IPaymentRepository.UpdatePayment(Payment payment)
+        public void UpdatePayment(Payment payment)
         {
             throw new NotImplementedException();
         }

@@ -31,7 +31,7 @@ namespace MovieRental.DAL.Tests.Tests
 
                 Assert.Empty(userRepository.GetUsers());
 
-                userRepository.InsertUser(new User { Id_User = 1, Name = "Jan", Surname = "Kowalski", Rates = null });
+                userRepository.InsertUser(new User { Id_User = 1, Name = "Jan", Surname = "Kowalski", Rates = null, Rents = null });
                 userRepository.Save();
                 Assert.Equal(1, userRepository.GetUsers().Count());
             }

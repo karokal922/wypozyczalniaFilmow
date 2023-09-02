@@ -8,39 +8,39 @@ using System.Threading.Tasks;
 
 namespace MovieRental.DAL.Tests.Dummies
 {
-    internal class UserRepoDummy : IUserRepository
+    public class UserRepoDummy : IUserRepository
     {
-        void IUserRepository.DeleteUser(int id)
+        public void DeleteUser(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        User IUserRepository.GetUser(int id)
+        public User GetUser(int id)
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<User> IUserRepository.GetUsers()
+        public IEnumerable<User> GetUsers()
         {
             throw new NotImplementedException();
         }
 
-        void IUserRepository.InsertUser(User user)
+        public void InsertUser(User user)
         {
             throw new NotImplementedException();
         }
 
-        void IUserRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void IUserRepository.UpdateUser(User user)
+        public void UpdateUser(User user)
         {
             throw new NotImplementedException();
         }

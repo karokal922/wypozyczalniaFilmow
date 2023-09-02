@@ -8,39 +8,39 @@ using System.Threading.Tasks;
 
 namespace MovieRental.DAL.Tests.Dummies
 {
-    internal class RateRepoDummy : IRateRepository
+    public class RateRepoDummy : IRateRepository
     {
-        void IRateRepository.DeleteRate(int id)
+        public void DeleteRate(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        Rate IRateRepository.GetRate(int id)
+        public Rate GetRate(int id)
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<Rate> IRateRepository.GetRates()
+        public IEnumerable<Rate> GetRates()
         {
             throw new NotImplementedException();
         }
 
-        void IRateRepository.InsertRate(Rate rate)
+        public void InsertRate(Rate rate)
         {
             throw new NotImplementedException();
         }
 
-        void IRateRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void IRateRepository.UpdateRate(Rate rate)
+        public void UpdateRate(Rate rate)
         {
             throw new NotImplementedException();
         }

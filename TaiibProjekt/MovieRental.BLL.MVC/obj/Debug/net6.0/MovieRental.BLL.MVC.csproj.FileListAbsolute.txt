@@ -269,3 +269,6 @@ C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektP
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\obj\Debug\net6.0\MovieRental.BLL.MVC.pdb
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\obj\Debug\net6.0\MovieRental.BLL.MVC.genruntimeconfig.cache
 C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\obj\Debug\net6.0\ref\MovieRental.BLL.MVC.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Karol\Desktop\SZKOŁA\studia\PPK\5sem\cpp\projekt\ProjektPIPAO\ProjektPIPAO\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL.MVC\bin\Debug\net6.0\Moq.dll

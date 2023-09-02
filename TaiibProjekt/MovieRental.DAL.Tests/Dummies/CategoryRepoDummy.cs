@@ -10,37 +10,37 @@ namespace MovieRental.DAL.Tests.Dummies
 {
     public class CategoryRepoDummy : ICategoryRepository
     {
-        void ICategoryRepository.DeleteCategory(int id)
+        public void DeleteCategory(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<Category> ICategoryRepository.GetCategories()
+        public IEnumerable<Category> GetCategories()
         {
             throw new NotImplementedException();
         }
 
-        Category ICategoryRepository.GetCategory(int id)
+        public Category GetCategory(int id)
         {
             throw new NotImplementedException();
         }
 
-        void ICategoryRepository.InsertCategory(Category category)
+        public void InsertCategory(Category category)
         {
             throw new NotImplementedException();
         }
 
-        void ICategoryRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void ICategoryRepository.UpdateCategory(Category category)
+        public void UpdateCategory(Category category)
         {
             throw new NotImplementedException();
         }

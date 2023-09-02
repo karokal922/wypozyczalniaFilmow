@@ -8,39 +8,39 @@ using System.Threading.Tasks;
 
 namespace MovieRental.DAL.Tests.Dummies
 {
-    internal class RentRepoDummy : IRentRepository
+    public class RentRepoDummy : IRentRepository
     {
-        void IRentRepository.DeleteRent(int id)
+        public void DeleteRent(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        Rent IRentRepository.GetRent(int id)
+        public Rent GetRent(int id)
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<Rent> IRentRepository.GetRents()
+        public IEnumerable<Rent> GetRents()
         {
             throw new NotImplementedException();
         }
 
-        void IRentRepository.InsertRent(Rent rent)
+        public void InsertRent(Rent rent)
         {
             throw new NotImplementedException();
         }
 
-        void IRentRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void IRentRepository.UpdateRent(Rent rent)
+        public void UpdateRent(Rent rent)
         {
             throw new NotImplementedException();
         }

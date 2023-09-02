@@ -10,37 +10,37 @@ namespace MovieRental.DAL.Tests.Dummies
 {
     public class MovieRepoDummy : IMovieRepository
     {
-        void IMovieRepository.DeleteMovie(int id)
+        public void DeleteMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        Movie IMovieRepository.GetMovie(int id)
+        public Movie GetMovie(int id)
         {
             throw new NotImplementedException();
         }
 
-        IEnumerable<Movie> IMovieRepository.GetMovies()
+        public IEnumerable<Movie> GetMovies()
         {
             throw new NotImplementedException();
         }
 
-        int IMovieRepository.InsertMovie(Movie movie)
+        public int InsertMovie(Movie movie)
         {
             throw new NotImplementedException();
         }
 
-        void IMovieRepository.Save()
+        public void Save()
         {
             throw new NotImplementedException();
         }
 
-        void IMovieRepository.UpdateMovie(Movie movie)
+        public void UpdateMovie(Movie movie)
         {
             throw new NotImplementedException();
         }
