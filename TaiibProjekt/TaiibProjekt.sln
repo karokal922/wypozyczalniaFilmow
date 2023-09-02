@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRental.BLL.MVC", "Movi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.BLL.Tests", "MovieRental.BLL.Tests\MovieRental.BLL.Tests.csproj", "{966C419B-AE76-4B88-888A-1FBED093CB25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.DAL.Tests", "MovieRental.DAL.Tests\MovieRental.DAL.Tests.csproj", "{985B48BE-4DB9-4F7D-9F25-ECB95A4665F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{966C419B-AE76-4B88-888A-1FBED093CB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966C419B-AE76-4B88-888A-1FBED093CB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966C419B-AE76-4B88-888A-1FBED093CB25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985B48BE-4DB9-4F7D-9F25-ECB95A4665F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985B48BE-4DB9-4F7D-9F25-ECB95A4665F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985B48BE-4DB9-4F7D-9F25-ECB95A4665F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985B48BE-4DB9-4F7D-9F25-ECB95A4665F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
