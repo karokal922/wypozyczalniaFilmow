@@ -34,7 +34,16 @@
                     <td>@item.Director</td>
                     <td>@item.Premiere</td>
                     <td>@item.Description</td>
-                    <td>@(Math.Round(item.Rates.Average(r => r.RateValue), 1))</td>
+                    @{
+                        if (item.Rates.Count() > 0)
+                        {
+                            <td>@(Math.Round(item.Rates.Average(r => r.RateValue), 1))</td>
+                        }
+                        else
+                        {
+                            <td>0.0</td>
+                        }
+                    }
                 </tr>
             }
         </tbody>

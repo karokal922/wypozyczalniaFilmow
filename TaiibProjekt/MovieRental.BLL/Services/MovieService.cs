@@ -49,7 +49,10 @@ namespace MovieRental.BLL.Services
         public IEnumerable<Movie> SortMoviesByAvgRatingsInGivenYear(int year)
         {
             var movies = unitOfWork.MovieRepository.GetMovies().Where(m => m.Premiere.Year == year)
-                .OrderByDescending(m=>m.Rates.Average(r=>r.RateValue)).ToList();
+                .OrderByDescending(m => m.Rates.Count() > 0 ? m.Rates.Average(r => r.RateValue) : 0).ToList();
+            //var rates = movies.Select(m => m.Rates.Count() > 0 ? m.Rates.Count() : 0);
+
+            //.OrderByDescending(m => m.Rates.Average(r => r.RateValue)).ToList();
 
             return movies;
             //return (from movie in movies

@@ -14,12 +14,12 @@ namespace MovieRental.BLL.MVC.Controllers
         {
             this.movieService = movieService;
         }
-        [HttpGet("GetMoviesByCategory")]
-        public IEnumerable<Movie> GetMoviesByCategory(int category_id)
+        [HttpGet("GetMoviesByCategory/{id}")]
+        public IEnumerable<Movie> GetMoviesByCategory(int id)
         {
-            return movieService.GetMoviesByCategory(category_id);
+            return movieService.GetMoviesByCategory(id);
         }
-        [HttpGet("SortMoviesByAvgRatingsInGivenYear")]
+        [HttpGet("SortMoviesByAvgRatingsInGivenYear/{year}")]
         public IEnumerable<Movie> SortMoviesByAvgRatingsInGivenYear(int year)
         {
             return movieService.SortMoviesByAvgRatingsInGivenYear(year);
