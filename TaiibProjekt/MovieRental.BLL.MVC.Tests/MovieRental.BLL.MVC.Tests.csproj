@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MovieRental.BLL.API\MovieRental.BLL.API.csproj" />
     <ProjectReference Include="..\MovieRental.BLL.MVC\MovieRental.BLL.MVC.csproj" />
     <ProjectReference Include="..\MovieRental.BLL\MovieRental.BLL.csproj" />
     <ProjectReference Include="..\TaiibProjekt\MovieRental.DAL.csproj" />

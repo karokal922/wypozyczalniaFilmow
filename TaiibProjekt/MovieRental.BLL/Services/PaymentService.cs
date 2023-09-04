@@ -26,13 +26,16 @@ namespace MovieRental.BLL.Services
             //    .Where(p => paymentIds.Contains(p.Id_Payment)).ToList();
             //return payments.Average(p => p.Price);
             var payments = unitOfWork.PaymentRepository.GetPayments().Where(p => p.Rent.UserId == userId);
-            var queryResult = new UserAveragePaymentResult
+            if (payments.Count() != 0)
             {
-                UserName = unitOfWork.UserRepository.GetUser(userId).Name,
-                AveragePayment = payments.Average(p => p.Price)
-            };
-
-            return queryResult;
+                var queryResult = new UserAveragePaymentResult
+                {
+                    UserName = unitOfWork.UserRepository.GetUser(userId).Name,
+                    AveragePayment = payments.Average(p => p.Price)
+                };
+                return queryResult;
+            }
+            return new UserAveragePaymentResult { UserName = unitOfWork.UserRepository.GetUser(userId).Name, AveragePayment = 0.0 };
         }
 
         public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice)
