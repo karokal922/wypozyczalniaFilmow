@@ -4,38 +4,87 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.RentingDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.RentingDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_Rent">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_Rent">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_Rent">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .top-bar {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+            .top-bar a {
+                color: white;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+
+        table {
+            color: white !important;
+        }
+
+        .create-button {
+            background-color: gray;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+            .create-button a {
+                color: white;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="/movies">Movies</a>
+        <a href="/categories">Categories</a>
+        <a href="/payments">Payments</a>
+        <a href="/rates">Rates</a>
+        <a href="/users">Users</a>
+    </div>
+
+    <h1>Index</h1>
+
+    <div class="create-button">
+        <a asp-action="Create">Create</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.RentingDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.User)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RentingDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id_Rent">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id_Rent">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id_Rent">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

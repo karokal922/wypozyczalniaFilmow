@@ -1,69 +1,119 @@
 ﻿@model IEnumerable<MovieRental.DAL.Models.Movie>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movies";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Director)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Premiere)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RentId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rates)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Director)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Premiere)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rent.Id_Rent)
-            </td>
-            <td>
-                @{
-                    double averageRate = item.Rates.Count > 0 ? item.Rates.Average(r => r.RateValue) : 0.0; 
-                    averageRate = Math.Round(averageRate, 1);
-                }
-                @averageRate/10
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_Movie">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_Movie">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_Movie">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .top-bar {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        table {
+            color: white !important;
+        }
+
+        .create-button {
+            background-color: gray;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+            .create-button a {
+                color: white;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="/categories">Categories</a>
+        <a href="/payments">Payments</a>
+        <a href="/rates">Rates</a>
+        <a href="/rents">Rents</a>
+        <a href="/users">Users</a>
+    </div>
+
+    <h1>Index</h1>
+
+    <div class="create-button">
+    <a asp-action="Create">Create</a>
+    </div>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Director)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Premiere)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RentId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rates)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Director)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Premiere)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rent.Id_Rent)
+                    </td>
+                    <td>
+                        @{
+                            double averageRate = item.Rates.Count > 0 ? item.Rates.Average(r => r.RateValue) : 0.0;
+                            averageRate = Math.Round(averageRate, 1);
+                        }
+                        @averageRate/10
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id_Movie">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id_Movie">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id_Movie">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
