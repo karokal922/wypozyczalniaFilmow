@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MovieRental.BLL.API.Models;
 using MovieRental.BLL.Interfaces;
 using MovieRental.BLL.Services;
 using MovieRental.DAL.Models;
+using System.Linq;
 
 namespace MovieRental.BLL.MVC.Controllers
 {
@@ -16,14 +18,28 @@ namespace MovieRental.BLL.MVC.Controllers
             this.paymentService = paymentService;
         }
         [HttpGet("GetUserAveragePaymentValue")]
-        public UserAveragePaymentResult GetUserAveragePaymentValue(int userId)
+        public IActionResult GetUserAveragePaymentValue(int id)
         {
-            return paymentService.GetUserAveragePaymentValue(userId);
+            var userAvgPayment = paymentService.GetUserAveragePaymentValue(id);
+            return Ok(userAvgPayment);
         }
         [HttpGet("GetPaymentsInRange")]
-        public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice)
+        public IActionResult GetPaymentsInRange(double minPrice, double maxPrice)
         {
-            return paymentService.GetPaymentsInRange(minPrice, maxPrice);
+            var payments = paymentService.GetPaymentsInRange(minPrice, maxPrice);
+            var result = new List<PaymentResponse>();
+            foreach (var payment in payments) 
+            {
+                var paymentResponse = new PaymentResponse();
+                var rentResponse = new RentResponse();
+                rentResponse.Id_Rent = payment.Rent.Id_Rent;
+                rentResponse.RentingDate = payment.Rent.RentingDate;
+                paymentResponse.Id_Payment = payment.Id_Payment;
+                paymentResponse.Price = payment.Price;
+                paymentResponse.Rent = rentResponse;
+                result.Add(paymentResponse);
+            }
+            return Ok(result);
         }
     }
 }

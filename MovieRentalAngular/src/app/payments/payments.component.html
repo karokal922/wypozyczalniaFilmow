@@ -1,21 +1,53 @@
-<a routerLink="add">Add new</a>
-<table>
+<header>
+    <h1>Payments browser</h1>
+</header>
+<form>
+    <label for="minPrice">Minimum price:  </label>
+    <input type="number" id="minPrice" name="minPrice" [(ngModel)]="minPrice"><br/>
+
+    <label for="maxPrice">Maximum price:  </label>
+    <input type="number" id="maxPrice" name="maxPrice" [(ngModel)]="maxPrice"><br/>
+
+    <button (click)="getPaymentsInRange()">Get Payments in range</button>
+</form><br/>
+<form>
+    <label for="userId">User Id:  </label>
+    <input type="number" id="userId" name="userId" [(ngModel)]="userId"><br/>
+
+    <button (click)="getUserAveragePaymentValue()">Get User average payment value</button>
+</form><br/>
+
+<table *ngIf="showPaymentTable">
     <thead>
         <tr>
             <th>Id</th>
             <th>Price</th>
+            <th>Id_Rent</th>
+            <th>Renting Date</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let payment of payments">
+        <tr *ngFor="let payment of paymentsInRange">
             <td>{{payment.id_Payment}}</td>
             <td>{{payment.price}}</td>
-            <td>
-                <button (click)="onDeleteClick(payment)">Delete</button>
-            </td>
-            <td>
-                <a [routerLink]="payment.id_Payment + '/edit'">Edit</a>
-            </td>
+            <td>{{payment.rent.id_Rent}}</td>
+            <td>{{payment.rent.rentingDate}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1 *ngIf="!notNull && showAvgTable">No User with such ID</h1>
+<table *ngIf="showAvgTable && notNull">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Average Price Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{userAvgResult.userName}}</td>
+            <td>{{userAvgResult.averagePayment}}</td>
         </tr>
     </tbody>
 </table>

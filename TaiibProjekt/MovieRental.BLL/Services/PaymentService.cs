@@ -18,7 +18,7 @@ namespace MovieRental.BLL.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public UserAveragePaymentResult GetUserAveragePaymentValue(int userId)
+        public UserAveragePaymentResult? GetUserAveragePaymentValue(int userId)
         {
             //var rents = unitOfWork.RentRepository.GetRents().Where(r => r.UserId == userId).ToList();
             //var paymentIds = rents.Select(r => r.Payment.Id_Payment).Distinct();
@@ -35,7 +35,7 @@ namespace MovieRental.BLL.Services
                 };
                 return queryResult;
             }
-            return new UserAveragePaymentResult { UserName = unitOfWork.UserRepository.GetUser(userId).Name, AveragePayment = 0.0 };
+            return null;//new UserAveragePaymentResult { UserName = unitOfWork.UserRepository.GetUser(userId).Name, AveragePayment = 0.0 };
         }
 
         public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice)
