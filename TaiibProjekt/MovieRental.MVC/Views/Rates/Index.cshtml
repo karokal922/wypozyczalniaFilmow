@@ -4,11 +4,56 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+        .top-bar {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+            .top-bar a {
+                color: white;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+
+        table {
+            color: white !important; /* Use !important to override other styles */
+        }
+        .create-button {
+    background-color: gray;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.create-button a {
+    color: white;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="/categories">Categories</a>
+        <a href="/payments">Payments</a>
+        <a href="/movies">Movies</a> <!-- Updated link to Movies -->
+        <a href="/rents">Rents</a>
+        <a href="/users">Users</a>
+    </div>
+
+    <h1>Index</h1>
+
+    <div class="create-button">
+    <a asp-action="Create">Create</a>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -51,3 +96,5 @@
 }
     </tbody>
 </table>
+</body>
+</html>

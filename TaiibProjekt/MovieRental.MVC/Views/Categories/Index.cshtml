@@ -4,32 +4,80 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoryName)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_Category">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_Category">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_Category">Delete</a>
-            </td>
-        </tr>
+        .top-bar {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        table {
+            color: white !important;
+        }
+        .create-button {
+    background-color: gray;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
-    </tbody>
-</table>
+
+.create-button a {
+    color: white;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="/movies">Movies</a> <!-- Changed from "Categories" to "Movies" -->
+        <a href="/payments">Payments</a>
+        <a href="/rates">Rates</a>
+        <a href="/rents">Rents</a>
+        <a href="/users">Users</a>
+    </div>
+
+    <h1>Index</h1>
+
+    <div class="create-button">
+        <a asp-action="Create">Create</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryName)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id_Category">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id_Category">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id_Category">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</body>
+</html>
