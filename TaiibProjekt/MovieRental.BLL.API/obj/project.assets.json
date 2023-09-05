@@ -3678,24 +3678,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Paweł\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\MovieRental.BLL.API.csproj",
+      "projectUniqueName": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\MovieRental.BLL.API.csproj",
       "projectName": "MovieRental.BLL.API",
-      "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\MovieRental.BLL.API.csproj",
-      "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\obj\\",
+      "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\MovieRental.BLL.API.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3703,17 +3698,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL\\MovieRental.BLL.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL\\MovieRental.BLL.csproj"
+            "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL\\MovieRental.BLL.csproj": {
+              "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\MovieRental.BLL\\MovieRental.BLL.csproj"
             },
-            "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Desktop\\Projekt_TAIIB\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj"
+            "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj": {
+              "projectPath": "C:\\Studia\\3 rok\\sem 6\\TAIiP\\Projekt\\wypozyczalniaFilmow\\TaiibProjekt\\TaiibProjekt\\MovieRental.DAL.csproj"
             }
           }
         }
@@ -3756,7 +3752,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

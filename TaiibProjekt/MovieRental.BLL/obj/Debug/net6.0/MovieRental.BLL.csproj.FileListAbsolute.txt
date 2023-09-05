@@ -28,3 +28,18 @@ C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\MovieRent
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\refint\MovieRental.BLL.dll
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.pdb
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\ref\MovieRental.BLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.deps.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.BLL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.DAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\bin\Debug\net6.0\MovieRental.DAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.AssemblyReference.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.AssemblyInfoInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.AssemblyInfo.cs
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.CoreCompileInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.csproj.CopyComplete
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\refint\MovieRental.BLL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\MovieRental.BLL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\MovieRental.BLL\obj\Debug\net6.0\ref\MovieRental.BLL.dll

@@ -40,3 +40,17 @@ C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\TaiibProj
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.pdb
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.genruntimeconfig.cache
 C:\Users\Paweł\Desktop\Projekt_TAIIB\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\ref\MovieRental.DAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.deps.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.runtimeconfig.json
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\bin\Debug\net6.0\MovieRental.DAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.csproj.AssemblyReference.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.AssemblyInfoInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.AssemblyInfo.cs
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.csproj.CoreCompileInputs.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\refint\MovieRental.DAL.dll
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.pdb
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\MovieRental.DAL.genruntimeconfig.cache
+C:\Studia\3 rok\sem 6\TAIiP\Projekt\wypozyczalniaFilmow\TaiibProjekt\TaiibProjekt\obj\Debug\net6.0\ref\MovieRental.DAL.dll
