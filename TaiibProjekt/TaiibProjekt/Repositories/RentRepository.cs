@@ -37,9 +37,11 @@ namespace MovieRental.DAL.Repositories
                 .FirstOrDefault();
         }
 
-        public void InsertRent(Rent rent)
+        public int InsertRent(Rent rent)
         {
             context.Rentals.Add(rent);
+            context.SaveChanges();
+            return rent.Id_Rent;
         }
 
         public void DeleteRent(int rentID)

@@ -11,7 +11,7 @@ namespace MovieRental.DAL.Interfaces
     {
         IEnumerable<Rent> GetRents();
         Rent GetRent(int id);
-        void InsertRent(Rent rent);
+        int InsertRent(Rent rent);
         void DeleteRent(int id);
         void UpdateRent(Rent rent);
         void Save();

@@ -32,6 +32,10 @@
         <tbody>
             @foreach (Movie item in ViewBag.Movies)
             {
+                if(item == null)
+                {
+                    
+                }
                 else
                 {
                     <tr>
@@ -42,9 +46,7 @@
                         @{
                             if (item.Rates.Count() > 0)
                             {
-                                <td>@(
-                                                        Math.Round(item.Rates.Average(r => r.RateValue), 1)
-                                                        )</td>
+                                <td>@(Math.Round(item.Rates.Average(r => r.RateValue), 1))</td>                        
                             }
                             else
                             {

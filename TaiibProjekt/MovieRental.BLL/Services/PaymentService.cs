@@ -44,6 +44,20 @@ namespace MovieRental.BLL.Services
                 .Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToList();
             return payments;
         }
+        public IEnumerable<Rent> GetAllRents() 
+        {
+            return unitOfWork.RentRepository.GetRents();
+        }
+        public int? CreatePayment(Payment paymentModel)
+        {
+            if(paymentModel.Price <= 0 || paymentModel.Rent == null)
+            {
+                return null;
+            }
+            unitOfWork.PaymentRepository.InsertPayment(paymentModel);
+            unitOfWork.Save();
+            return paymentModel.Id_Payment;
+        }
     }
     public class UserAveragePaymentResult
     {

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MovieRental.DAL.Models;
 
 namespace MovieRental.BLL.Services
 {
@@ -44,6 +45,29 @@ namespace MovieRental.BLL.Services
                                   AverageRate = g.Average(r => r.RateValue)
                               };
             return queryResult.ToList();
+        }
+        public IEnumerable<User> GetAllUsers()
+        {
+            return unitOfWork.UserRepository.GetUsers().ToList();
+        }
+
+        public IEnumerable<Movie> GetAllMovies()
+        {
+            return unitOfWork.MovieRepository.GetMovies().ToList();
+        }
+        public IEnumerable<Rate> GetAllRates()
+        {
+            return unitOfWork.RateRepository.GetRates().ToList();
+        }
+        public int? CreateRate(Rate rateModel)
+        {
+            if (rateModel.User == null || rateModel.Movie == null)
+            {
+                return null;
+            }
+            unitOfWork.RateRepository.InsertRate(rateModel);
+            unitOfWork.Save();
+            return rateModel.Id_Rate;
         }
     }
     public class MovieRatingResult

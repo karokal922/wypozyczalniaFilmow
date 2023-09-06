@@ -13,5 +13,6 @@ namespace MovieRental.BLL.Interfaces
         public List<Rent> GetRentalsByMovie(int movieId);
         public List<User> GetAllUsers();
         public List<Movie> GetAllMovies();
+        public int? CreateRent(Rent rentModel);
     }
 }

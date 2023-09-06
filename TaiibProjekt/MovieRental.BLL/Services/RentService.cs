@@ -21,25 +21,12 @@ namespace MovieRental.BLL.Services
         public List<Rent> GetRentalsByUser(int userId)
         {
             var rentals = unitOfWork.RentRepository.GetRents().Where(r => r.UserId == userId).ToList();
-            //return (from rent in rentals
-            //        from Movie movie in rent.Movies
-            //        where rent.UserId == userId
-            //        select rent).ToList();
             return rentals;
         }
 
         public List<Rent> GetRentalsByMovie(int movieId)
         {
             var rentals = unitOfWork.RentRepository.GetRents().Where(r => r.Movies.Any(m => m.Id_Movie == movieId)).ToList();
-            //var rentalsByMovie = new List<Rent>();
-            //foreach (var rental in rentals)
-            //{
-            //    if (rental.Movies.Any(m => m.Id_Movie == movieId))
-            //    {
-            //        rentalsByMovie.Add(rental);
-            //    }
-            //}
-
             return rentals;
         }
 
@@ -51,6 +38,16 @@ namespace MovieRental.BLL.Services
         public List<Movie> GetAllMovies()
         {
             return unitOfWork.MovieRepository.GetMovies().ToList();
+        }
+        public int? CreateRent(Rent rentModel) 
+        {
+            if(rentModel.Movies.Count() <= 0 || rentModel.User == null)
+            {
+                return null;
+            }
+            unitOfWork.RentRepository.InsertRent(rentModel);
+            unitOfWork.RentRepository.Save();
+            return rentModel.Id_Rent;
         }
     }
 }

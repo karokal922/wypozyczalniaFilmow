@@ -5,6 +5,20 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    .custom-create-button {
+        background-color: #333333;
+        color: white;
+        padding: 8px 16px; 
+        border-radius: 4px; 
+        text-decoration: none;
+    }
+
+    .custom-create-button:hover {
+        background-color: #555555;
+        color: white;
+    }
+</style>
 @if (ViewBag.AllUsers != null)
 {
     <table class="table">
@@ -54,3 +68,6 @@
         </tbody>
     </table>
 }
+<div class="create-button">
+    <a asp-action="Create" class="custom-create-button">Create rent</a>
+</div>

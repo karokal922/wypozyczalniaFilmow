@@ -35,9 +35,11 @@ namespace MovieRental.DAL.Repositories
                 .FirstOrDefault();
         }
 
-        public void InsertRate(Rate rate)
+        public int InsertRate(Rate rate)
         {
             context.Ratings.Add(rate);
+            context.SaveChanges();
+            return rate.Id_Rate;
         }
 
         public void DeleteRate(int rateID)

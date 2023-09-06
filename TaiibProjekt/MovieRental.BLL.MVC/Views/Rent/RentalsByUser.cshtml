@@ -18,7 +18,7 @@
             {
                 <tr>
                     <td>@item.Id_Rent</td>
-                    <td>@item.Payment.Price</td>
+                    <td>@(item.Payment != null ? item.Payment.Price : "notPaid")</td>
                     <td>@item.User.Name</td>
                     <td>@item.RentingDate</td>
                     <td>@item.Movies.Count()</td>
@@ -27,3 +27,6 @@
         </tbody>
     </table>
 }
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -11,7 +11,7 @@ namespace MovieRental.DAL.Interfaces
     {
         IEnumerable<Rate> GetRates();
         Rate GetRate(int id);
-        void InsertRate(Rate rate);
+        int InsertRate(Rate rate);
         void DeleteRate(int id);
         void UpdateRate(Rate rate);
         void Save();

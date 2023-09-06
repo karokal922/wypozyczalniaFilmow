@@ -12,5 +12,7 @@ namespace MovieRental.BLL.Interfaces
     {
         public UserAveragePaymentResult GetUserAveragePaymentValue(int userId);
         public IEnumerable<Payment> GetPaymentsInRange(double minPrice, double maxPrice);
+        public IEnumerable<Rent> GetAllRents();
+        public int? CreatePayment(Payment paymentModel);
     }
 }
