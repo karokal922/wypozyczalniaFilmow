@@ -9,9 +9,8 @@
         alert('@Html.Raw(ViewData["CreatingError"])');
     </script>
 }
-<h1>Create</h1>
+<h1>RATE MOVIE</h1>
 
-<h4>Rate</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -28,15 +27,15 @@
                 <span asp-validation-for="Comment" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MovieId" class="control-label"></label>
+                <label asp-for="Movie" class="control-label"></label>
                 <select asp-for="MovieId" class ="form-control" asp-items="ViewBag.MovieId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
+                <label asp-for="User" class="control-label"></label>
                 <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Rate" class="btn btn-primary" />
             </div>
         </form>
     </div>
