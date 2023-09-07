@@ -1,5 +1,5 @@
 ﻿@using MovieRental.DAL.Models;
-<h1>MOVIE CONTROLLER</h1>
+<h1>MOVIE BASE</h1>
 
 
 
@@ -60,21 +60,29 @@
     </table>
 }
 
-@if (ViewBag.AllCategories != null)
+@if (ViewBag.AllCategories != null @*&& ViewBag.AllCategories.Any()*@)
 {
+
     <table class="table">
         <thead>
             <tr>
                 <th>Show all movies from this category</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (Category item in ViewBag.AllCategories)
-            {
-                <tr>
-                    <td><a asp-action="GetAllMoviesWithGivenCategory" asp-route-id="@item.Id_Category"><input type="button" value="@item.CategoryName"></a> </td>
-                </tr>
-            }
-        </tbody>
     </table>
+        
+            <div class="category-container">
+                @foreach (var category in ViewBag.AllCategories)
+                {
+                    <a asp-action="GetAllMoviesWithGivenCategory" asp-route-id="@category.Id_Category" class="category-link">
+                        @category.CategoryName
+                    </a>
+                }
+            </div>
+    
+  
+}
+else
+{
+    <p>No categories found.</p>
 }

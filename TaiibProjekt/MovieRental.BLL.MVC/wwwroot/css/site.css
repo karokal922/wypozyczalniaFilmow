@@ -86,3 +86,24 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-link {
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+    .category-link:hover {
+        color: #333;
+        background-color: #fff;
+    }

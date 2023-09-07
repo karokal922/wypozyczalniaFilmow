@@ -71,6 +71,9 @@
         </tbody>
     </table>
 }
-<div class="create-button">
-    <a asp-action="Create" class="custom-create-button">Rate movie</a>
-</div>
+<hr />
+
+<form asp-action="Create" asp-controller="Rate">
+    <input type="submit" value="Rate movie" />
+</form>
+
