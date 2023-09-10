@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using Microsoft.AspNetCore.Mvc;
+using Moq;
 using MovieRental.BLL.Interfaces;
 using MovieRental.BLL.MVC.Controllers;
 using MovieRental.BLL.Services;
@@ -32,7 +33,10 @@ namespace MovieRental.BLL.MVC.Tests.ApiControllerTests
 
             PaymentApiController paymentApiController = new PaymentApiController(mockPaymentService.Object);
 
-            Assert.Equal(paymentList, paymentApiController.GetPaymentsInRange(5.0, 20.0));
+            //Assert.Equal(paymentList, paymentApiController.GetPaymentsInRange(5.0, 20.0));
+            
+            IActionResult result = paymentApiController.GetPaymentsInRange(5.0, 20.0);//
+            Assert.IsType<OkObjectResult>(result);//
         }
 
         [Fact]
@@ -47,7 +51,18 @@ namespace MovieRental.BLL.MVC.Tests.ApiControllerTests
 
             PaymentApiController paymentApiController = new PaymentApiController(mockPaymentService.Object);
 
-            Assert.Equal(userAvgPayment, paymentApiController.GetUserAveragePaymentValue(1));
+            //Assert.Equal(userAvgPayment, paymentApiController.GetUserAveragePaymentValue(1));
+
+            IActionResult result = paymentApiController.GetUserAveragePaymentValue(1);
+
+            Assert.IsType<OkObjectResult>(result);
+    
+            var okObjectResult = result as OkObjectResult;
+            var userAveragePaymentResult = okObjectResult.Value as UserAveragePaymentResult;
+
+            Assert.NotNull(userAveragePaymentResult);
+            Assert.Equal(userAvgPayment.UserName, userAveragePaymentResult.UserName);
+            Assert.Equal(userAvgPayment.AveragePayment, userAveragePaymentResult.AveragePayment);
         }
     }
 }

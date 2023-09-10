@@ -30,7 +30,7 @@ namespace MovieRental.DAL.Tests.Dummies
             throw new NotImplementedException();
         }
 
-        public void InsertRate(Rate rate)
+        public int InsertRate(Rate rate)
         {
             throw new NotImplementedException();
         }

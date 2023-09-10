@@ -30,7 +30,7 @@ namespace MovieRental.DAL.Tests.Dummies
             throw new NotImplementedException();
         }
 
-        public void InsertRent(Rent rent)
+        public int InsertRent(Rent rent)
         {
             throw new NotImplementedException();
         }

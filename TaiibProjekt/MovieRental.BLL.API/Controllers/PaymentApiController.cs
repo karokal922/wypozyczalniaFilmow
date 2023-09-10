@@ -32,8 +32,13 @@ namespace MovieRental.BLL.MVC.Controllers
             {
                 var paymentResponse = new PaymentResponse();
                 var rentResponse = new RentResponse();
-                rentResponse.Id_Rent = payment.Rent.Id_Rent;
-                rentResponse.RentingDate = payment.Rent.RentingDate;
+                if (payment.Rent != null) //
+                {//
+                    rentResponse.Id_Rent = payment.Rent.Id_Rent;//
+                    rentResponse.RentingDate = payment.Rent.RentingDate;//
+                }//
+                //rentResponse.Id_Rent = payment.Rent.Id_Rent;
+                //rentResponse.RentingDate = payment.Rent.RentingDate;
                 paymentResponse.Id_Payment = payment.Id_Payment;
                 paymentResponse.Price = payment.Price;
                 paymentResponse.Rent = rentResponse;
