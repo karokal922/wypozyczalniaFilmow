@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Moq;
 using MovieRental.BLL.Interfaces;
 using MovieRental.BLL.MVC.Controllers;
 using MovieRental.BLL.Services;
+using MovieRental.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +56,63 @@ namespace MovieRental.BLL.MVC.Tests.ControllerTests
 
             var viewResult = (ViewResult)result;
             Assert.Same(lista, viewResult.ViewData["AverageRatePerUser"]);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        
+        [Fact]
+        public void Index_ReturnsViewResult()
+        {
+            var rateServiceMock = new Mock<IRateService>();
+            var controller = new RateController(rateServiceMock.Object);
+
+            var result = controller.Index();
+
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Create_GET_ReturnsViewResultWithSelectLists()
+        {
+            var rateServiceMock = new Mock<IRateService>();
+            rateServiceMock.Setup(r => r.GetAllMovies()).Returns(new List<Movie>());
+            rateServiceMock.Setup(r => r.GetAllUsers()).Returns(new List<User>());
+            var controller = new RateController(rateServiceMock.Object);
+
+            var result = controller.Create() as ViewResult;
+
+            Assert.NotNull(result);
+            Assert.IsType<SelectList>(result.ViewData["MovieId"]);
+            Assert.IsType<SelectList>(result.ViewData["UserId"]);
+        }
+
+        [Fact]
+        public void Create_POST_InvalidModel_ReturnsViewResultWithModelError()
+        {
+            var rateServiceMock = new Mock<IRateService>();
+            var controller = new RateController(rateServiceMock.Object);
+            controller.ModelState.AddModelError("UserId", "UserId is required");
+            var rate = new Rate { UserId = 1, MovieId = 2 };
+
+            var result = controller.Create(rate) as ViewResult;
+
+            Assert.NotNull(result);
+            Assert.True(result.ViewData.ModelState.ContainsKey("UserId"));
+        }
+
+        [Fact]
+        public void Create_POST_ExistingRate_ReturnsViewResultWithCreatingError()
+        {
+            var rateServiceMock = new Mock<IRateService>();
+            rateServiceMock.Setup(r => r.GetAllRates()).Returns(new List<Rate> { new Rate { UserId = 1, MovieId = 2 } });
+            var controller = new RateController(rateServiceMock.Object);
+            var rate = new Rate { UserId = 1, MovieId = 2 };
+
+            var result = controller.Create(rate) as ViewResult;
+
+            Assert.NotNull(result);
+            Assert.Equal("Rate from that user to this movie already exists.", result.ViewData["CreatingError"]);
         }
     }
 }

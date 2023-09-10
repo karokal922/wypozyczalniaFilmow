@@ -67,6 +67,8 @@ namespace MovieRental.BLL.MVC.Tests.ApiControllerTests
 
             Assert.Same(movies, movieApiController.GetMoviesByCategory(1));
         }
+
+
         [Fact]
         public void TestSortMoviesByRatingsInGivenYearAction()
         {
