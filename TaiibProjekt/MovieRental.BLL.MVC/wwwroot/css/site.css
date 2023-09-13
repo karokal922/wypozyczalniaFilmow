@@ -85,6 +85,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: fixed;
 }
 
 .category-container {
@@ -103,7 +104,7 @@ footer {
     text-decoration: none;
     
 }
-    .category-link:hover {
-        color: #333;
-        background-color: #fff;
-    }
+.category-link:hover {
+    color: #333;
+    background-color: #fff;
+}

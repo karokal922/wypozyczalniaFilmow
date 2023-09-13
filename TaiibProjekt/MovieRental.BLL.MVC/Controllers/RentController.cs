@@ -33,7 +33,7 @@ namespace MovieRental.BLL.MVC.Controllers
         }
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(rentService.GetAllUsers(), "Id_User", "Name");
+            ViewData["UserId"] = new SelectList(rentService.GetAllUsers(), "Id_User", "Name", "Surname");
             ViewData["MoviesIds"] = new MultiSelectList(rentService.GetAllMovies().Where(m => m.RentId == null), "Id_Movie", "Title");//displays only available movies 
             return View("Create");
         }
@@ -63,7 +63,7 @@ namespace MovieRental.BLL.MVC.Controllers
             }
             ViewData["NotificationMessage"] = "No movie selected.";
             ViewData["MoviesIds"] = new MultiSelectList(rentService.GetAllMovies().Where(m => m.RentId == null), "Id_Movie", "Title");//displays only available movies 
-            ViewData["UserId"] = new SelectList(rentService.GetAllUsers(), "Id_User", "Name");
+            ViewData["UserId"] = new SelectList(rentService.GetAllUsers(), "Id_User", "Name", "Surname");
             return View("Create");
         }
     }

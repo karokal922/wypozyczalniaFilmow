@@ -19,6 +19,12 @@
         color: white;
     }
 </style>
+<br />
+<div class="create-button">
+    <a asp-action="Create" class="custom-create-button">Create rent</a>
+</div>
+<br />
+
 @if (ViewBag.AllUsers != null)
 {
     <table class="table">
@@ -44,30 +50,31 @@
 
 @if (ViewBag.AllMovies != null)
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Director</th>
-                <th>Premiere</th>
-                <th>Description</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Movie item in ViewBag.AllMovies)
-            {
+    <div>
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@item.Title</td>
-                    <td>@item.Director</td>
-                    <td>@item.Premiere</td>
-                    <td>@item.Description</td>
-                    <td><a asp-action="GetRentalsByMovie" asp-route-id="@item.Id_Movie"><input type="button" value="Get Rental"></a></td>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Premiere</th>
+                    <th>Description</th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (Movie item in ViewBag.AllMovies)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Director</td>
+                        <td>@item.Premiere</td>
+                        <td>@item.Description</td>
+                        <td><a asp-action="GetRentalsByMovie" asp-route-id="@item.Id_Movie"><input type="button" value="Get Rental"></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
-<div class="create-button">
-    <a asp-action="Create" class="custom-create-button">Create rent</a>
-</div>
+
+
