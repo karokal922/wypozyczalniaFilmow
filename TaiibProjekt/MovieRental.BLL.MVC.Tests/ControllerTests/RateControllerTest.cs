@@ -57,10 +57,7 @@ namespace MovieRental.BLL.MVC.Tests.ControllerTests
             var viewResult = (ViewResult)result;
             Assert.Same(lista, viewResult.ViewData["AverageRatePerUser"]);
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        
+
         [Fact]
         public void Index_ReturnsViewResult()
         {

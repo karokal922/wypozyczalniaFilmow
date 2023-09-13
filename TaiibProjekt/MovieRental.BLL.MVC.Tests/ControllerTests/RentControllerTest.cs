@@ -78,5 +78,16 @@ namespace MovieRental.BLL.MVC.Tests.ControllerTests
             var viewResult = (ViewResult)result;
             Assert.Same(lista, viewResult.ViewData["RentalsByMovie"]);
         }
+
+        [Fact]
+        public void TestIndexAction()
+        {
+            Mock<IRentService> mockRentService = new Mock<IRentService>();
+            RentController rentController = new RentController(mockRentService.Object);
+
+            var result = rentController.Index();
+
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }
