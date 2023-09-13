@@ -72,6 +72,9 @@
     </table>
         
             <div class="category-container">
+            <a asp-action="GetAllMoviesWithGivenCategory" asp-route-id="-1" class="category-link">
+            All
+            </a>
                 @foreach (var category in ViewBag.AllCategories)
                 {
                     <a asp-action="GetAllMoviesWithGivenCategory" asp-route-id="@category.Id_Category" class="category-link">

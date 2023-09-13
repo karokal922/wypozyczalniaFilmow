@@ -30,27 +30,33 @@ namespace MovieRental.BLL.Services
             List<Movie> result = new List<Movie>();
             Category category = unitOfWork.CategoryRepository.GetCategory(category_id);
 
-            foreach (Movie movie in movies)
+            if (category_id != -1)
             {
-                if (movie.Categories != null)
+                foreach (Movie movie in movies)
                 {
-                    foreach (Category movie_category in movie.Categories)
+                    if (movie.Categories != null)
                     {
-                        if (movie_category == category)
+                        foreach (Category movie_category in movie.Categories)
                         {
-                            result.Add(movie);
+                            if (movie_category == category)
+                            {
+                                result.Add(movie);
+                            }
                         }
                     }
                 }
             }
-
+            else
+            {
+                return movies;
+            }
             return result;
         }
         public IEnumerable<Movie> SortMoviesByAvgRatingsInGivenYear(int year)
         {
+
             var movies = unitOfWork.MovieRepository.GetMovies().Where(m => m.Premiere.Year == year)
                 .OrderByDescending(m => m.Rates.Count() > 0 ? m.Rates.Average(r => r.RateValue) : 0).ToList();
-          
             return movies;
         }
     }

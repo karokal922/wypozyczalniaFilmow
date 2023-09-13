@@ -35,7 +35,7 @@
                 <tr>
                     <td>@item.Name</td>
                     <td>@item.Surname</td>
-                    <td><a asp-action="GetRentalsByUser" asp-route-id="@item.Id_User">Get Rental</a></td>
+                    <td><a asp-action="GetRentalsByUser" asp-route-id="@item.Id_User"><input type="button" value="Get Rental"></a></td>
                 </tr>
             }
         </tbody>
@@ -62,7 +62,7 @@
                     <td>@item.Director</td>
                     <td>@item.Premiere</td>
                     <td>@item.Description</td>
-                    <td><a asp-action="GetRentalsByMovie" asp-route-id="@item.Id_Movie">Get Rentals</a></td>
+                    <td><a asp-action="GetRentalsByMovie" asp-route-id="@item.Id_Movie"><input type="button" value="Get Rental"></a></td>
                 </tr>
             }
         </tbody>
