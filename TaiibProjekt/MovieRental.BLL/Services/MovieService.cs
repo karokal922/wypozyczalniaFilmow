@@ -50,15 +50,8 @@ namespace MovieRental.BLL.Services
         {
             var movies = unitOfWork.MovieRepository.GetMovies().Where(m => m.Premiere.Year == year)
                 .OrderByDescending(m => m.Rates.Count() > 0 ? m.Rates.Average(r => r.RateValue) : 0).ToList();
-            //var rates = movies.Select(m => m.Rates.Count() > 0 ? m.Rates.Count() : 0);
-
-            //.OrderByDescending(m => m.Rates.Average(r => r.RateValue)).ToList();
-
+          
             return movies;
-            //return (from movie in movies
-            //        where movie.Premiere.Year == year
-            //        //orderby movie.Ratings.Average(rate => rate._Rate) descending
-            //        select movie).ToList();
         }
     }
 }
